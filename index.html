@@ -1,48 +1,81 @@
-<!doctype html>
 <html>
-  <head>
-  	
-  	<style>
-	
-	body {
-		background-color: #3e3f40;
-	}
-	h1   {
-		color: white;
-		margin-left: 350px;
-		margin-top: 170px;
-		font-family: helvetica;
-		font-size: 40px;
-	}
-	p    {
-		color: white;
-		font-family: avenir;
-		font-style: bold;
-		font-size: 13px;
-		margin-top: 40px;
-		margin-left: 350px;
-		margin-right: 350px;
-	}
 
-	.profile-pic {
-		border-radius: 50%;
-		overflow: hidden;
-	}
-	
-	</style>
-    <title>Anna Fang</title>
-  </head>
-<div src="me.jpg" id="profile-pic"></div>
-  <body>
-  	<h1> Hi, I'm Anna. </h1>
-  	
-  	<hr />
-  	<p>I am a PhD candidate at Stanford University/The University of Washington/Cornell University in <tt>Computer Science</tt>. I study <strong>social computing</strong> and <strong>human-computer interaction</strong>.
-  	My research focuses on <strong>the networks of social and information systems, and how they can be leveraged to aid societal wellness as a whole</strong>.
-  	<br>
+<body style="background-color:#333333;">
+<head>
+	<title> INFO3300 Project 1 </title>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<style>
+
+h1{
+	font-style: normal;
+	width: 300px;
+	font-weight: 300;
+	position: relative;
+	font-size:1.8em;
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: "Helvetica";
+}
+
+h2{
+	width: 400px;
+	font-family: "Helvetica";
+	font-weight:400;
+	font-style:normal;
+	margin: 0 0 20px 0;
+	font-size: 1em;
+	color: #c9c9c9;
+	padding-left:200px;
+	display:inline-block;
+}
+
+h3{
+	width: 400px;
+	font-family: "Helvetica";
+	font-weight:300;
+	font-style:normal;
+	margin: 0 0 20px 0;
+	font-size: 0.9em;
+	color: #c9c9c9;
+	padding-left:200px;
+}
+
+.emphasis{
+	font-weight: 600;
+	position: relative;
+	font-size: 1em;
+	color: #FFF;
+	font-style: bold;
+}
+
+.emphasis-italic{
+	font-weight: 600;
+	position: relative;
+	font-size: 1em;
+	color: #FFF;
+	font-style: italic;
+}
+
+
+</style>
+
+
+	<h1 style="padding-left:200px; padding-top:100px;">
+		<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</span>
+	</h1>
+
+	<h2>
+	I am a PhD candidate at <span class="emphasis-italic"> The University of Washington</span> in Computer Science. Previously, I graduated from <span class="emphasis-italic"> Cornell University</span> with a BS in Computer Science in 2019 and worked as a software engineer at <span class="emphasis-italic">Amazon</span> in Seattle.
+
+	<br><br>
+
+	<h3>I am broadly interested in <span class="emphasis-italic">social computing and human-computer interaction</span>, with focuses on education and collaboration technology, aiding people's mental/emotional wellbeing, computing for social change, and ensuring algorithmic fairness for disadvantaged groups.
 	<br>
-  	Some goals of my work are to understand how online communities affect offline society, improve people's mental and emotional wellbeing, study online education and collaboration, and combat algorithmic bias against disadvantaged groups. In other words, I am passionate about building computational techniques and tools that help people live healthy and fair lives in the modern digital age.</p>
+	In other words, I am passionate about building computational techniques and tools that help people live <span class="emphasis">fair, empowered, and healthily interconnected lives</span> in the modern digital age.
+	<br><br>
 
-    <p>Previously, I graduated magna cum laude from Cornell University in 2019 with my Bachelor of Science in Computer Science and worked at Amazon as a software engineer <tt>(CV)</tt>. I love sketching and painting, filmmaking, watching movies (especially Wes Anderson), botany, coffee/tea, knitting, and being a homebody. </p>
-  </body>
+	Previously, I graduated magna cum laude from Cornell University in 2019 with my Bachelor of Science in Computer Science and worked at Amazon as a software engineer <tt>(CV)</tt>. I love sketching and painting, filmmaking, watching movies (especially Wes Anderson), botany, coffee/tea, knitting, and being a homebody.</h3>
+
 </html>
