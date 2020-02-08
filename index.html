@@ -46,7 +46,7 @@ h3{
 .emphasis{
 	font-weight: 600;
 	position: relative;
-	font-size: 1.1em;
+	font-size: 1em;
 	color: #FFF;
 	font-style: bold;
 }
@@ -69,6 +69,17 @@ img {
 
 }
 
+a {
+  color: #fff;
+  background-color: transparent;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+a:hover {
+	color: #a8a6a6;
+}
+
 .image-cropper {
 	max-width: 260px;
     width: auto;
@@ -81,25 +92,51 @@ img {
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.button {
+	margin-top: 370px;
+	margin-left: 900px;
+	position: absolute;
+	background-color: #cccccc;
+	border: none;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	vertical-align: middle;
+	font-size:12px;
+	text-decoration: underline dotted;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+.button:hover{
+  background-color: #a8a6a6;	
+}
+
 </style>
 
 	<div class="image-cropper">
 	<img src="img/me.jpg" alt="avatar">
 	</div>
 
+
+    <div class="button"><a href="img/CV.pdf" target="_blank">View CV</a></div>
+
 	<h1 style="padding-left:370px; padding-top:100px;">
 		<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna.</span>
 	</h1>
 
 	<h2 style="padding-top:30px;">
-	I am a first-year PhD candidate at <span class="emphasis-italic"> Dummy University</span> in Computer Science. Previously, I graduated from <span class="emphasis-italic"> Cornell University</span> with a BS in Computer Science in 2019 and worked as a software engineer at <span class="emphasis-italic">Amazon</span> in Seattle.
+	I am a first-year PhD candidate at <span class="emphasis"> Dummy University</span> in Computer Science. Previously, I graduated from <span class="emphasis-italic"> <a href="https://www.cs.cornell.edu" target="_blank">Cornell University</a></span> with a BS in Computer Science in 2019 and worked as a software engineer at <span class="emphasis">Amazon</span> in Seattle.
 
-	<h3>I am broadly interested in <span class="emphasis">social computing and human-computer interaction</span>, with focuses on education and collaboration technology, aiding people's mental/emotional wellbeing, computing for social change, and ensuring algorithmic fairness for disadvantaged groups.
-	<br>
-	In other words, I am passionate about building computational techniques and tools that help people live <span class="emphasis">fair, productive, and healthily interconnected lives</span> in the modern digital age.
+	<h3>I am broadly interested in <span class="emphasis">social computing and human-computer interaction</span>, with applications to education and collaboration, mental/emotional wellbeing, computing for social change, and algorithmic fairness for disadvantaged groups. 
 	<br><br>
 
-	<h3 style="font-size:0.9em;color:#fff">
-	Outside of academia, I love drawing, filmmaking, botany, watching movies (especially Wes Anderson), coffee/tea, and my rescue greyhound Milo. I'm an INFJ. I have a very high spice tolerance. I make a very good London Fog and Matcha Latte. </h3>
+	I am particularly passionate about the <span class="emphasis"> networks of social and information systems</span> and how they can be leveraged to help people live <span class="emphasis">fair and healthily interconnected lives</span> in the modern digital age.
+	<br><br>
+
+	<h3 style="font-size:0.9em;">
+	Outside of academia, I love drawing, filmmaking, botany, watching movies (especially Wes Anderson), coffee/tea, and my rescue greyhound Milo. I'm an <a href="https://www.16personalities.com/infj-personality" target="_blank">INFJ</a>. I have a very high spice tolerance. I make a very good London Fog and Matcha Latte. </h3>
+
+
 
 </html>
