@@ -109,17 +109,38 @@ a:hover {
   background-color: #8a8a8a;	
 }
 
+.line{
+    position: relative;
+    top: 50%;  
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.typewriter{
+  animation: typewriter 3s steps(16) 1s 1 normal both,
+             blinkTextCursor 800ms steps(22) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
 </style>
 
 	<div class="image-cropper">
 	<img src="img/me.jpg" alt="avatar">
 	</div>
-
-
     <div class="button" style="margin-top:370px; margin-left:880px;"><a href="img/CV.pdf" target="_blank">View CV</a></div>
 
 	<h1 style="padding-left:370px; padding-top:100px;">
-		<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</span>
+		<p class="emphasis line typewriter" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</p>
 	</h1>
 
 	<h2 style="padding-top:30px;">
