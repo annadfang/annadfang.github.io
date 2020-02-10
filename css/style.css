@@ -79,25 +79,6 @@ a:hover {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.cv {
-	position: absolute;
-	font-family: 'Rock Salt';
-	background-color: #a7a7a7;
-	color: black;
-	padding: 10px 20px;
-	text-align: center;
-	vertical-align: middle;
-	font-size:10px;
-	cursor: pointer;
-	border-radius: 16px;
-}
-
-.cv:hover{
-  background-color: #8a8a8a;	
-}
-
-
-
 .tab button {
   background-color: inherit;
   border: none;
