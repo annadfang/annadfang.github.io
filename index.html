@@ -1,165 +1,13 @@
 <html>
 
 <body style="background-color:#333333;">
+
 <head>
-
-<link href="https://fonts.googleapis.com/css?family=Karla|Quattrocento+Sans|Rock+Salt&display=swap" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css?family=Karla|Quattrocento+Sans|Rock+Salt&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title> Anna Fang </title>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
-
-<style>
-
-h1{
-	font-style: normal;
-	width: 400px;
-	font-weight: 300;
-	position: relative;
-	font-size: 1.5em;
-	color: #FFF;
-	font-family: 'Rock Salt', cursive;
-}
-
-h2{
-	width: 450px;
-	font-family: 'Karla', sans-serif;
-	font-weight:400;
-	font-style:normal;
-	font-size: 1em;
-	color: #c9c9c9;
-	padding-left:350px;
-	display:inline-block;
-}
-
-h3{
-	width: 400px;
-	font-family: 'Karla', sans-serif;
-	font-weight:300;
-	font-style:normal;
-	margin: 0 0 20px 0;
-	font-size: 0.9em;
-	color: #c9c9c9;
-	padding-left:370px;
-}
-
-.emphasis{
-	font-weight: 600;
-	position: relative;
-	font-size: 1em;
-	color: #FFF;
-	font-style: bold;
-}
-
-.white{
-	color: #FFF;
-}
-
-img {
-  	display: inline;
-  	width: 220px;
-
-}
-
-a {
-  color: #fff;
-  background-color: transparent;
-  text-decoration: underline dotted;
-}
-
-a:hover {
-	color: #8a8a8a;
-}
-
-.image-cropper {
-	max-width: 220px;
-    width: auto;
-    height: 220px;
-    margin-top: 120px;
-    margin-left: 850px;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-.cv {
-	position: absolute;
-	font-family: 'Rock Salt';
-	background-color: #a7a7a7;
-	color: black;
-	padding: 10px 20px;
-	text-align: center;
-	vertical-align: middle;
-	font-size:10px;
-	cursor: pointer;
-	border-radius: 16px;
-}
-
-.cv:hover{
-  background-color: #8a8a8a;	
-}
-
-.line{
-    position: relative;
-    top: 50%;  
-    border-right: 2px solid rgba(255,255,255,.75);
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
-
-.typewriter{
-  animation: typewriter 3s steps(16) 1s 1 normal both,
-             blinkTextCursor 800ms steps(22) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 8em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-</style>
 
 <div class="tab" >
   <button class="tabs" onclick="showNewTab(event, 'bio')">bio</button>
@@ -175,7 +23,7 @@ a:hover {
 	<a href="img/CV.pdf" target="_blank" style="text-decoration:none;">View CV</a>
 </div>
 
-<h1 style="padding-left:350px; padding-top:100px;">
+<h1>
 	<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</span>
 </h1>
 
@@ -183,7 +31,7 @@ a:hover {
 	<h2>
 	I am a first-year PhD candidate at the <span class="emphasis"> University of Washington</span> in Computer Science. I graduated from <span class="emphasis">Cornell University</span> with a BS in Computer Science in 2019 and worked as a software engineer at Amazon in Seattle.</h2>
 
-	<h2>
+	<h2 style="margin-top: 300px;">
 	I am broadly interested in <a href="https://en.wikipedia.org/wiki/Social_computing" target="_blank">social computing</a> and <a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank">human-computer interaction</a>. My work explores how the networks of social and information systems can be leveraged to make people's lives <span class="emphasis">healthy, productive, and fair</span>, with applications to mental/emotional wellbeing, education and collaboration, and algorithmic fairness for disadvantaged groups.
 	</h2>
 </div>
@@ -201,7 +49,7 @@ a:hover {
 </div>
 
 <script>
-function showNewTab(evt, newTab) {
+function showNewTab(event, newTab) {
   var i, content, tabs;
 
   content = document.getElementsByClassName("content");
@@ -215,7 +63,7 @@ function showNewTab(evt, newTab) {
   }
 
   document.getElementById(newTab).style.display = "block";
-  evt.currentTarget.className += " active";
+  event.currentTarget.className += " active";
 }
 
 </script>
