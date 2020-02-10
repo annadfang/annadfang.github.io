@@ -14,7 +14,7 @@
 
 h1{
 	font-style: normal;
-	width: 300px;
+	width: 400px;
 	font-weight: 300;
 	position: relative;
 	font-size: 1.5em;
@@ -23,14 +23,13 @@ h1{
 }
 
 h2{
-	width: 400px;
+	width: 450px;
 	font-family: 'Karla', sans-serif;
 	font-weight:400;
 	font-style:normal;
-	margin: 0 0 20px 0;
 	font-size: 1em;
 	color: #c9c9c9;
-	padding-left:370px;
+	padding-left:350px;
 	display:inline-block;
 }
 
@@ -53,14 +52,6 @@ h3{
 	font-style: bold;
 }
 
-.emphasis-italic{
-	font-weight: 600;
-	position: relative;
-	font-size: 1em;
-	color: #FFF;
-	font-style: italic;
-}
-
 .white{
 	color: #FFF;
 }
@@ -74,7 +65,6 @@ img {
 a {
   color: #fff;
   background-color: transparent;
-  font-style: italic;
   text-decoration: underline dotted;
 }
 
@@ -87,7 +77,7 @@ a:hover {
     width: auto;
     height: 220px;
     margin-top: 120px;
-    margin-left: 810px;
+    margin-left: 850px;
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
@@ -133,30 +123,102 @@ a:hover {
   to{border-right-color: transparent;}
 }
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 
 </style>
 
-	<div class="image-cropper">
-	<img src="img/me.jpg" alt="avatar">
-	</div>
-    <div class="cv" style="margin-top:370px; margin-left:880px;"><a href="img/CV.pdf" target="_blank" style="text-decoration:none;">View CV</a></div>
+<div class="tab" >
+  <button class="tabs" onclick="showNewTab(event, 'bio')">bio</button>
+  <button class="tabs" onclick="showNewTab(event, 'research')">research</button>
+  <button class="tabs" onclick="showNewTab(event, 'art')">art</button>
+</div>
 
-	<h1 style="padding-left:370px; padding-top:100px;">
-		<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</span>
-	</h1>
+<div class="image-cropper">
+	<img src="img/me.jpg" alt="avatar">
+</div>
+
+<div class="cv" style="margin-top:370px; margin-left:920px;">
+	<a href="img/CV.pdf" target="_blank" style="text-decoration:none;">View CV</a>
+</div>
+
+<h1 style="padding-left:350px; padding-top:100px;">
+	<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</span>
+</h1>
+
+<div id="bio" class="content">
+	<h2>
+	I am a first-year PhD candidate at the <span class="emphasis"> University of Washington</span> in Computer Science. I graduated from <span class="emphasis">Cornell University</span> with a BS in Computer Science in 2019 and worked as a software engineer at Amazon in Seattle.</h2>
 
 	<h2>
-	I am a first-year PhD candidate at <span class="emphasis"> Dummy University</span> in Computer Science. I graduated from <span class="emphasis-italic"> <a href="https://www.cs.cornell.edu" target="_blank">Cornell University</a></span> with a BS in Computer Science in 2019 and was also a software engineer at Amazon in Seattle.</h2>
+	I am broadly interested in <a href="https://en.wikipedia.org/wiki/Social_computing" target="_blank">social computing</a> and <a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank">human-computer interaction</a>. My work explores how the networks of social and information systems can be leveraged to make people's lives <span class="emphasis">healthy, productive, and fair</span>, with applications to mental/emotional wellbeing, education and collaboration, and algorithmic fairness for disadvantaged groups.
+	</h2>
+</div>
 
-	<h3>
-	I am broadly interested in <a href="https://en.wikipedia.org/wiki/Social_computing" target="_blank">social computing</a> and <a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank">human-computer interaction</a>, with applications to education and collaboration, mental/emotional wellbeing, computing for social good, and algorithmic fairness for disadvantaged groups. 
-	<br><br>
+<div id="research" class="content" style="display:none;">
+	<h2>
+	research blah blah
+	</h2>
+</div>
 
-	I am particularly passionate about the networks of social and information systems and how they can be leveraged to make people's lives <span class="emphasis">healthy, productive, and fair</span> in an increasingly interconnected world.
-	<br><br>
+<div id="art" class="content" style="display:none;"">
+	<h2>
+	art blah blah
+	</h2>
+</div>
 
-	Outside of academia, I love sketching, painting, filmmaking, botany, movies (especially Wes Anderson), coffee/tea, and my rescue greyhound Milo. I'm an <a href="https://www.16personalities.com/infj-personality" target="_blank">INFJ</a>. I have a very high spice tolerance. I make an extremely good <a href="https://en.wikipedia.org/wiki/London_fog_(beverage)" target="_blank">London Fog</a>.
-	</h3>
+<script>
+function showNewTab(evt, newTab) {
+  var i, content, tabs;
+
+  content = document.getElementsByClassName("content");
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+
+  tabs = document.getElementsByClassName("tabs");
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].className = tabs[i].className.replace(" active", "");
+  }
+
+  document.getElementById(newTab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
 
 
 
