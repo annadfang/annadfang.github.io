@@ -4,7 +4,7 @@ h1{
 	font-weight: 300;
 	position: absolute;
 	font-size: 1.5em;
-	color: #FFF;
+	color: #000;
   margin-left:350px; 
   margin-top:100px;
 	font-family: 'Rock Salt', cursive;
@@ -17,26 +17,15 @@ h2{
 	font-weight:400;
 	font-style:normal;
 	font-size: 1em;
-	color: #c9c9c9;
+	color: #333333;
   margin-top: 200px;
 	margin-left: 350px;
-}
-
-h3{
-  position: absolute;
-	width: 400px;
-	font-family: 'Karla', sans-serif;
-	font-weight:300;
-	font-style:normal;
-	font-size: 0.9em;
-	color: #c9c9c9;
-	margin-left:370px;
 }
 
 .tab {
   position: absolute;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #fff;
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -45,7 +34,7 @@ h3{
 	font-weight: 600;
 	position: relative;
 	font-size: 1em;
-	color: #FFF;
+	color: #333333;
 	font-style: bold;
 }
 
@@ -58,7 +47,7 @@ img {
 }
 
 a {
-  color: #fff;
+  color: #333333;
   background-color: transparent;
   text-decoration: underline dotted;
 }
@@ -87,7 +76,7 @@ a:hover {
   padding: 10px 14px;
   transition: 0.3s;
   border-radius: 16px;
-  color: #fff;
+  color: #333333;
 }
 
 .tab button:hover {
