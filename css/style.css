@@ -60,16 +60,15 @@ a:hover {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.page {
+.tab {
   position: absolute;
   overflow: hidden;
-  background-color: #fff;
   margin-left: 20px;
   margin-top: 20px;
 }
 
-.page button {
-  background-color: inherit;
+.tab button {
+  background-color: #fff;
   font-size: 14px;
   border: none;
   outline: none;
@@ -80,10 +79,10 @@ a:hover {
   color: #333333;
 }
 
-.page button:hover {
+.tab button:hover {
   background-color: #ffeca8;
 }
 
-.page button.active {
+.tab button.active {
   background-color: #ffeca8;
 }
