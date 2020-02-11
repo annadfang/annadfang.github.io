@@ -22,14 +22,6 @@ h2{
 	margin-left: 370px;
 }
 
-.tab {
-  position: absolute;
-  overflow: hidden;
-  background-color: #fff;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
 .emphasis{
 	font-weight: 600;
 	position: relative;
@@ -68,7 +60,15 @@ a:hover {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.tab button {
+.page {
+  position: absolute;
+  overflow: hidden;
+  background-color: #fff;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.page button {
   background-color: inherit;
   font-size: 14px;
   border: none;
@@ -80,10 +80,10 @@ a:hover {
   color: #333333;
 }
 
-.tab button:hover {
+.page button:hover {
   background-color: #ffeca8;
 }
 
-.tab button.active {
+.page button.active {
   background-color: #ffeca8;
 }
