@@ -6,18 +6,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Karla|Almarai|Rock+Salt&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title> Anna Fang </title>
-	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <div class="tab" >
-  <button class="tabs" onclick="showNewTab(event, 'bio')">bio</button>
-  <button class="tabs" onclick="showNewTab(event, 'about me')">about me</button>
-  <button class="tabs" onclick="showNewTab(event, 'research')">research</button>
-  <button class="tabs" onclick="showNewTab(event, 'art')">art</button>
-  <button class="tabs" onclick="window.open('/img/CV.pdf');">view cv</button>
+  <button class="page" onclick="window.open('/index.html', '_self');">home</button>
+  <button class="page" onclick="window.open('/aboutme.html', '_self');">about me</button>
+  <button class="page" onclick="window.open('/research.html', '_self');">research</button>
+  <button class="page" onclick="window.open('/art.html', '_self');">art</button>
+  <button class="page" onclick="window.open('/img/CV.pdf');">view cv</button>
 </div>
 
-<div class="image-cropper">
+<div class="image-crop">
 	<img src="img/me.jpg" alt="avatar">
 </div>
 
@@ -25,58 +24,12 @@
 	<span class="emphasis" style="font-weight:800;font-size:1.2em">Hi, I'm Anna!</span>
 </h1>
 
-<div id="bio" class="content">
+<div>
 	<h2>
 	I am a first-year PhD candidate at the <span class="emphasis"> University of Washington</span> in Computer Science, under the advising of <span class="emphasis"><a href="https://google.com" target="_blank">Amy Zhang</a></span> and <span class="emphasis"><a href="https://google.com" target="_blank">Katharina Reinecke</a></span>. I previously received my BS in Computer Science from <span class="emphasis">Cornell University</span> and was a software engineer at Amazon for a year.
 	<br><br>
 	I am broadly interested in <a href="https://en.wikipedia.org/wiki/Social_computing" target="_blank">social computing</a> and <a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank">human-computer interaction</a>. My work explores how the networks of social and information systems can be leveraged to make people's lives <span class="emphasis">healthy, productive, and fair</span>, with applications to mental/emotional wellbeing, education and collaboration, and algorithmic fairness for disadvantaged groups.
 	</h2>
 </div>
-
-<div id="about me" class="content" style="display:none;">
-	<h2 style="font-size: 0.85em;">
-	I am a proud Hoosier, born and raised in Indiana. I then lived in Ithaca, New York for 4 years to attend Cornell University, then Seattle, Washington for 1 year to work at Amazon. I also lived a summer in El Segundo, California.
-	<br><br>
-	Outside of academia, I am an avid artist with my mediums of choice being graphite pencil and acrylic paint. I was a competitive youth artist in Indiana for about a decade, although I no longer sell or compete.
-	<br><br>
-	Other things I love include: filmmaking, botany, coffee/tea, films (especially Wes Anderson), and my greyhound <a href="https://annadfang.github.io">Milo</a>.
-	<br><br>
-	Other fun facts: I'm an <a href="https://www.16personalities.com/infj-personality" target="_blank">INFJ</a>. I have a very high spice tolerance. I make a very good <a href="https://en.wikipedia.org/wiki/London_fog_(beverage)" target="_blank">London Fog</a>.. My birthmark is on my eye. 
-	</h3>
-</div>
-
-<div id="research" class="content" style="display:none;">
-	<h2>
-	research blah blah
-	</h2>
-</div>
-
-<div id="art" class="content" style="display:none;"">
-	<h2>
-	art blah blah
-	</h2>
-</div>
-
-<script>
-function showNewTab(event, newTab) {
-  var i, content, tabs;
-
-  content = document.getElementsByClassName("content");
-  for (i = 0; i < content.length; i++) {
-    content[i].style.display = "none";
-  }
-
-  tabs = document.getElementsByClassName("tabs");
-  for (i = 0; i < tabs.length; i++) {
-    tabs[i].className = tabs[i].className.replace(" active", "");
-  }
-
-  document.getElementById(newTab).style.display = "block";
-  event.currentTarget.className += " active";
-}
-
-</script>
-
-
 
 </html>
