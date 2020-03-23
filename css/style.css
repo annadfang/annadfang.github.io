@@ -1,13 +1,12 @@
 h1{
 	font-style: normal;
 	width: 400px;
-	font-weight: 300;
 	position: absolute;
 	font-size: 1.8em;
 	color: #000;
   margin-left: 370px; 
-  margin-top: 100px;
-	font-family: 'Rock Salt', cursive;
+  margin-top: 130px;
+	font-family: 'Helvetica Neue';
 }
 
 h2{
@@ -63,11 +62,12 @@ a:hover {
 .tab {
   position: absolute;
   overflow: hidden;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 20px;
 }
 
 .tab button {
+  font-family:'Helvetica Neue';
   background-color: #fff;
   font-size: 14px;
   border: none;
@@ -80,9 +80,9 @@ a:hover {
 }
 
 .tab button:hover {
-  background-color: #ffeca8;
+  color: #ffffff;
 }
 
 .tab button.active {
-  background-color: #ffeca8;
+  color: #7ba2ab;
 }
