@@ -2,20 +2,20 @@ h1{
 	font-style: normal;
 	width: 400px;
 	position: absolute;
-	font-size: 1.8em;
+	font-size: 3em;
 	color: #000;
   margin-left: 370px; 
-  margin-top: 130px;
-	font-family: 'Helvetica Neue';
+  margin-top: 120px;
+	font-family: 'Reenie Beanie';
 }
 
 h2{
   position: absolute;
-	width: 470px;
+	width: 500px;
 	font-family: 'Almarai', sans-serif;
 	font-weight: 100;
 	font-style:normal;
-	font-size: 0.9em;
+	font-size: 0.82em;
   line-height: 25px;
 	color: #333333;
   margin-top: 200px;
