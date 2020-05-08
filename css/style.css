@@ -11,7 +11,7 @@ h1{
 
 h2{
   position: absolute;
-	width: 430px;
+	width: 500px;
 	font-family: 'Almarai', sans-serif;
 	font-weight: 100;
 	font-style:normal;
@@ -50,25 +50,23 @@ a:hover {
   position: absolute;
 	max-width: 220px;
   width: auto;
-  height: 220px;
+  height: 180px;
   overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
-  margin-left:450px;
-  margin-top:20px;
+  margin-left:670px;
 }
 
 .body {
-  margin: auto;
-  width:660px;
-  height:400px;
+  margin-left: 500px;
+  margin-top: 200px;
+  width:700px;
+  height:500px;
 }
 
 .tab {
   position: absolute;
   overflow: hidden;
   margin-left: 20px;
-  margin-top: 100px;
 }
 
 .tab button {
@@ -81,7 +79,7 @@ a:hover {
   padding: 15px 14px;
   transition: 0.4s;
   border-radius: 24px;
-  color: #d9d9d9;
+  color: #d3d7dc;
   display:block;
 }
 
