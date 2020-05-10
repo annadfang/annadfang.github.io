@@ -4,14 +4,11 @@ h1{
 	position: absolute;
 	font-size: 3em;
 	color: #000;
-  margin-left: 370px; 
-  margin-top: 120px;
-	font-family: 'Reenie Beanie';
+	font-family: 'Almarai', sans-serif;
 }
 
 h2{
   position: absolute;
-  text-align:center;
 	width: 550px;
 	font-family: 'Almarai', sans-serif;
 	font-weight: 100;
@@ -49,25 +46,26 @@ a:hover {
 
 .profile-crop {
   position: absolute;
-  display: block;
   width: auto;
   height: 180px;
   overflow: hidden;
   border-radius: 50%;
-  top: 47%; 
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin-top: -100px;
+  margin-left: 650px;
 }
 
 .body {
   width:600px;
   height:100px;
+  display:block;
 }
 
 .tab {
   position: absolute;
+  top:25%;
+  left:20px;
   overflow: hidden;
-  margin-left: 20px;
+  width: 100px;
 }
 
 .tab button {
