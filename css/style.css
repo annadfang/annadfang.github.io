@@ -60,20 +60,14 @@ a:hover {
   display:block;
 }
 
-.tab {
-  position: absolute;
-  top:25%;
-  left:20px;
-  overflow: hidden;
-  width: 100px;
-}
 
-.tab button {
+a:link {
   font-family:'Helvetica Neue';
   background-color: #fff;
   font-size: 14px;
   border: none;
   outline: none;
+  text-decoration: none;
   cursor: pointer;
   padding: 15px 14px;
   transition: 0.4s;
@@ -82,10 +76,19 @@ a:hover {
   display:block;
 }
 
-.tab button:hover {
+a:hover {
   color: #ffffff;
 }
 
-.tab button.active {
-  color: #333;
+a:active {
+  color: #333333;
+} 
+
+.tab {
+  position: absolute;
+  top:25%;
+  left:20px;
+  overflow: hidden;
+  width: 100px;
+  list-style: none;
 }
