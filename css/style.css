@@ -51,22 +51,27 @@ img {
 }
 
 a {
-  color: #cdcdcd;
+  color: #333333;
+  background-color: transparent;
+  text-decoration: underline dotted;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #fafafa;
+}
+
+.nav-link{
+  color: #dcddde;
   font-family:'Helvetica Neue';
-  background-color: #fff;
   font-size: 14px;
   border: none;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   padding: 15px 14px;
-  transition: 0.4s;
   border-radius: 24px;
   display:block;
-}
-
-a:hover {
-  color: #ffffff;
 }
 
 .active-link {
