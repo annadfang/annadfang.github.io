@@ -1,47 +1,37 @@
 h1{
-	font-style: normal;
-	width: 400px;
-	position: absolute;
-	font-size: 3em;
-	color: #000;
-	font-family: 'Almarai', sans-serif;
+  font-style: normal;
+  width: 400px;
+  position: absolute;
+  font-size: 3em;
+  color: #000;
+  font-family: 'Almarai', sans-serif;
 }
 
 h2{
   position: absolute;
-	width: 550px;
-	font-family: 'Almarai', sans-serif;
-	font-weight: 100;
-	font-size: 0.77em;
+  width: 550px;
+  font-family: 'Almarai', sans-serif;
+  font-weight: 100;
+  font-size: 0.77em;
   line-height: 25px;
-	color: #333333;
+  color: #333333;
 }
 
 .emphasis{
-	font-weight: 600;
-	position: relative;
-	font-size: 1em;
-	color: #333333;
-	font-style: bold;
+  font-weight: 600;
+  position: relative;
+  font-size: 1em;
+  color: #333333;
+  font-style: bold;
 }
 
 .white{
-	color: #FFF;
+  color: #FFF;
 }
 
 img {
   width:180px;
   height:auto;
-}
-
-a {
-  color: #333333;
-  background-color: transparent;
-  text-decoration: underline dotted;
-}
-
-a:hover {
-	color: #7ba2ab;
 }
 
 .profile-crop {
@@ -60,32 +50,34 @@ a:hover {
   display:block;
 }
 
+a {
+  color: #cdcdcd;
+  font-family:'Helvetica Neue';
+  background-color: #fff;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 14px;
+  transition: 0.4s;
+  border-radius: 24px;
+  display:block;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.active-link {
+  color: #333333;
+} 
+
 .tab {
   position: absolute;
   top:25%;
   left:20px;
   overflow: hidden;
   width: 100px;
-}
-
-.tab button {
-  font-family:'Helvetica Neue';
-  background-color: #fff;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px 14px;
-  transition: 0.4s;
-  border-radius: 24px;
-  color: #d3d7dc;
-  display:block;
-}
-
-.tab button:hover {
-  color: #ffffff;
-}
-
-.tab button.active {
-  color: #333;
+  list-style: none;
 }
