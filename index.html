@@ -3,23 +3,23 @@
 <body style="background-color:#fff;">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Karla|Almarai|Rock+Salt|Reenie+Beanie&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla|Almarai|Rock+Salt&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title> Anna Fang </title>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
-<div class="tab">
-  <li><a class="nav-link active-link" href="/index.html">Home</a></li>
-  <li><a class="nav-link" href="/aboutme.html">About Me</a></li>
-  <li><a class="nav-link" href="/research.html">Research</a></li>
-  <li><a class="nav-link" href="/art.html">Art</a></li>
-  <li><a class="nav-link" href="/updates.html">Updates</a></li>
-  <li><a class="nav-link" onclick="window.open('img/CV.pdf');">View CV</a></li>
+<div class="tab" >
+	<button class="tabs" onclick="showNewTab(event, 'home')">Home</button>
+	<button class="tabs" onclick="showNewTab(event, 'about me')">About Me</button>
+	<button class="tabs" onclick="showNewTab(event, 'research')">Research</button>
+	<button class="tabs" onclick="showNewTab(event, 'art')">Art</button>
+	<button class="tabs" onclick="window.open('/img/CV.pdf');">View CV</button>
 </div>
 
 <div style="margin:auto;width:900px;vertical-align:middle;">
 
-	<div style="display:block;margin-top:160px;margin-left:50px;">
+	<div style="display:block;margin-top:145px;margin-left:0px;">
 		<img style="width:50%;"src="img/sign.jpg" alt="sign">
 	</div>
 
@@ -27,11 +27,56 @@
 		<img src="img/me.jpg" alt="avatar">
 	</div>
 
-	<div class="body">
-		<h2 style="left:25%;">
-			I am a first-year PhD candidate at <span class="emphasis">Carnegie Mellon University</span> in the <span class="emphasis">Human-Computer Interaction Institute</span> within the School of Computer Science. Previously, I graduated from <span class="emphasis">Cornell University</span> with a BS in Computer Science and worked as a software engineer at <span class="emphasis">Amazon</span>.
+	<div id="home" class="body" style="margin-left:20px;">
+		<h2>
+		I am a first-year PhD candidate at <span class="emphasis">Carnegie Mellon University</span> in the <span class="emphasis">Human-Computer Interaction Institute</span> within the School of Computer Science. Previously, I graduated from <span class="emphasis">Cornell University</span> with a BS in Computer Science and worked as a software engineer at <span class="emphasis">Amazon</span>.
+		</h2>
+	</div>
+
+	<div id="about me" class="body" style="display:none;">
+		<h2>
+			2020 - Present: Pittsburgh, Pennsylvania<br>
+			2019 - 2020: Seattle, Washington<br>
+			2015 - 2019: Ithaca, New York<br>
+			1997 - 2015: Carmel, Indiana
+
+			<br><br>
+
+			I have a rescue greyhound named <a href="https://www.instagram.com/milo.thegreyt/">Milo</a>, who I adopted in 2019. I'm a big coffee and tea fanatic. I love filmmaking, botany, and extremely spicy food. And I'm an <a href="https://www.16personalities.com/infp-personality" target="_blank">INFP</a>!
+		</h2>
+	</div>
+
+	<div id="research" class="body" style="display:none;">
+		<h2>
+			I am broadly interested in <span class="emphasis"><a href="https://en.wikipedia.org/wiki/Social_computing" target="_blank">social computing</a></span>. My work explores how the networks of social and information systems can be leveraged to make people's lives <span class="emphasis">healthy, productive, and fair</span>, with applications to mental/emotional wellbeing, education and collaboration, and algorithmic fairness for disadvantaged groups.
+		</h2>
+	</div>
+
+	<div id="art" class="body" style="display:none;"">
+		<h2>
+			art blah blah
 		</h2>
 	</div>
 </div>
+
+<script>
+function showNewTab(event, newTab) {
+  var i, body, tabs;
+
+  body = document.getElementsByClassName("body");
+  for (i = 0; i < body.length; i++) {
+    body[i].style.display = "none";
+  }
+
+  tabs = document.getElementsByClassName("tabs");
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].className = tabs[i].className.replace(" active", "");
+  }
+
+  document.getElementById(newTab).style.display = "block";
+  event.currentTarget.className += " active";
+}
+
+</script>
 
 </html>

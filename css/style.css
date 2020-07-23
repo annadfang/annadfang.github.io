@@ -34,6 +34,13 @@ img {
   height:auto;
 }
 
+.body {
+  width:600px;
+  height:100px;
+  display:block;
+  margin-left:20px;
+}
+
 .profile-crop {
   position: absolute;
   width: auto;
@@ -44,10 +51,13 @@ img {
   margin-left: 650px;
 }
 
-.body {
-  width:600px;
-  height:100px;
-  display:block;
+.tab {
+  position: absolute;
+  top:30%;
+  left:20px;
+  overflow: hidden;
+  width: 100px;
+  list-style: none;
 }
 
 a {
@@ -61,28 +71,22 @@ a:hover {
   color: #fafafa;
 }
 
-.nav-link{
+.tab button {
   color: #dcddde;
   font-family:'Helvetica Neue';
-  font-size: 14px;
+  background-color: inherit;
   border: none;
   outline: none;
-  text-decoration: none;
   cursor: pointer;
-  padding: 15px 14px;
-  border-radius: 24px;
-  display:block;
+  padding: 10px 14px;
+  transition: 0.3s;
+  border-radius: 16px;
 }
 
-.active-link {
+.tab button:hover {
   color: #333333;
-} 
+}
 
-.tab {
-  position: absolute;
-  top:25%;
-  left:20px;
-  overflow: hidden;
-  width: 100px;
-  list-style: none;
+.tab button.active {
+  color: #333333;
 }
