@@ -2,9 +2,10 @@ h1{
   font-style: normal;
   width: 400px;
   position: absolute;
-  font-size: 3em;
+  font-size: 1em;
   color: #000;
   font-family: 'Almarai', sans-serif;
+  font-style: italic;
 }
 
 h2{
