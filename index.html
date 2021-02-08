@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title> Anna Fang </title>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
 </head>
 
 <div class="tab" >
@@ -36,7 +37,6 @@
 		<h2 style="margin-top:-120px;margin-left:1020px;width:260px;font-size:0.75em;">
 		<span class="emphasis" style="font-size:1.3em;font-style:italic;">little diary</span>
 		<br><br>
-
 		<span style="text-decoration: underline;">December 2020</span>: Finished my first semester of PhD happily!<br>
 		<span style="text-decoration: underline;">September 2020</span>: <span class="emphasis">Started research with Dr. Haiyi Zhu!</span> Working in the mental health space, along with a great undergrad!<br>
 		<span style="text-decoration: underline;">August 2020</span>: <span class="emphasis">Left Amazon</span>. Drove WA -> IN -> PA. <br>
@@ -49,7 +49,7 @@
 	<div id="about me" class="body" style="display:none;">
 		<h2>
 			- My main hobbies are <span class="emphasis">drawing</span> and <span class="emphasis">coffee-making</span>. I also love <span class="emphasis">botany</span>, <span class="emphasis">filmmaking</span>, and <span class="emphasis">extremely spicy food</span>. <br>
-			- I have a <span class="emphasis">8-year-old greyhound named <a href="https://www.instagram.com/milo.thegreyt/">Milo</a></span>, who I adopted in 2019 from the wonderful rescue <a href="https://www.greyhoundpetsinc.org/">GPI</a>. Milo is a rescued <a href="http://www.ohiolurcherproject.com/lurcher-racing/">field trial racer</a>. <br><br>
+			- I have a <span class="emphasis">8-year-old greyhound named <a href="https://www.instagram.com/milo.thegreyt/">Milo</a></span>, who I adopted in 2019 from the wonderful <a href="https://www.greyhoundpetsinc.org/">GPI</a>. Milo is a rescued <a href="http://www.ohiolurcherproject.com/lurcher-racing/">field trial racer</a>. <br><br>
 
 			<span style="font-style:italic;font-size:10pt;">Many greyhounds are retired or rescued racers and now in need of good homes. <span class="emphasis">Greyhounds are famously docile, lazy, and calm</span>; retired racers were raised to be well-handled and polite. They are fantastic for apartments as they are extremely quiet, sleep all day, and barely shed. <span class="emphasis">Please consider adopting a greyhound if you are looking for a dog!</span></span>
 		</h2>
@@ -65,7 +65,7 @@
 		</h2>
 	</div>
 
-	<div id="art" class="body" style="display:none;"">
+	<div id="art" class="body" style="display:none;">
 		<h2>
 			<a href="https://www.instagram.com/brainfree.ze/" target="_blank">@brainfree.ze</a>
 			
@@ -74,6 +74,11 @@
 </div>
 
 <script>
+
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.mobile() || md.tablet()) {
+    document.location.href = 'mobile.html';
+}
 
 function showNewTab(event, newTab) {
   var i, body, tabs;
