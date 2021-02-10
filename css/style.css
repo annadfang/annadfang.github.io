@@ -10,7 +10,7 @@ h1{
 
 h2{
   position: absolute;
-  width: 550px;
+  width: 500px;
   font-family: 'Rock  Salt', sans-serif;
   font-weight: 100;
   font-size: 0.9em;
@@ -48,7 +48,7 @@ img {
   height: 180px;
   overflow: hidden;
   border-radius: 50%;
-  margin-top: -100px;
+  margin-top: 0px;
   margin-left: 650px;
 }
 
