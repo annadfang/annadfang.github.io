@@ -2,7 +2,7 @@ h1{
   font-style: normal;
   width: 400px;
   position: absolute;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #000;
   font-family: 'Almarai', sans-serif;
   font-style: italic;
@@ -11,9 +11,9 @@ h1{
 h2{
   position: absolute;
   width: 550px;
-  font-family: 'Almarai', sans-serif;
+  font-family: 'Rock  Salt', sans-serif;
   font-weight: 100;
-  font-size: 0.84em;
+  font-size: 0.9em;
   line-height: 25px;
   color: #333333;
 }
