@@ -67,7 +67,7 @@ img {
 
 .profile-crop {
   position: absolute;
-  width: auto;
+  width: 180px;
   height: 180px;
   overflow: hidden;
   border-radius: 50%;
