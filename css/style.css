@@ -56,13 +56,15 @@ h2{
 img {
   width:180px;
   height:auto;
+  border-radius: 10%;
 }
 
 .body {
   width:600px;
   height:100px;
   display:block;
-  margin-left:20px;
+  margin-left:110px;
+  margin-top:130px;
 }
 
 .profile-crop {
@@ -71,13 +73,13 @@ img {
   height: 180px;
   overflow: hidden;
   border-radius: 50%;
-  margin-top: 0px;
-  margin-left: 580px;
+  margin-top: 120px;
+  margin-left: 950px;
 }
 
 .tab {
   position: absolute;
-  top:30%;
+  top:40%;
   left:20px;
   overflow: hidden;
   width: 100px;
