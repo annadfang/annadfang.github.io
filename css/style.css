@@ -79,10 +79,10 @@ img {
 
 .tab {
   position: absolute;
-  top:40%;
+  top:34%;
   left:20px;
   overflow: hidden;
-  width: 100px;
+  width: 130px;
   list-style: none;
 }
 
