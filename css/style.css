@@ -13,7 +13,7 @@ h2{
   width: 500px;
   font-family: 'Rock  Salt', sans-serif;
   font-weight: 100;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 25px;
   color: #333333;
 }
@@ -63,7 +63,7 @@ img {
   width:600px;
   height:100px;
   display:block;
-  margin-left:130px;
+  margin-left:150px;
   margin-top:15%;
 }
 
@@ -89,7 +89,7 @@ img {
 a {
   color: #333333;
   background-color: transparent;
-  text-decoration: underline dotted;
+  text-decoration: underline wavy;
   transition: 0.2s;
 }
 
