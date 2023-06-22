@@ -63,18 +63,20 @@ img {
   width:600px;
   height:100px;
   display:block;
-  margin-left:150px;
+  margin-left:170px;
   margin-top:15%;
 }
 
 .profile-crop {
   position: absolute;
+  transform: scale(1.2);
   width: 180px;
   height: 180px;
   overflow: hidden;
   border-radius: 50%;
-  margin-top: 120px;
+  margin-top: 150px;
   margin-left: 550px;
+
 }
 
 .tab {
@@ -82,7 +84,7 @@ img {
   top:34%;
   left:20px;
   overflow: hidden;
-  width: 130px;
+  width: 180px;
   list-style: none;
 }
 
@@ -107,10 +109,13 @@ a:hover {
   padding: 10px 14px;
   transition: 0.3s;
   border-radius: 16px;
+  font-size:0.9em;
 }
 
 .tab button:hover {
   color: #333333;
+  font-size:1em;
+
 }
 
 .tab button.active {
