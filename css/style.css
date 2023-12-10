@@ -91,7 +91,7 @@ img {
 a {
   color: #333333;
   background-color: transparent;
-  text-decoration: underline wavy;
+  text-decoration: underline dotted;
   transition: 0.2s;
 }
 
