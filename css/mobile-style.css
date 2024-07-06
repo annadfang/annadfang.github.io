@@ -2,7 +2,7 @@ h1{
   font-style: normal;
   width: 400px;
   position: absolute;
-  font-size: 1.4em;
+  font-size: 2em;
   color: #000;
   font-family: 'Almarai', sans-serif;
   font-style: italic;
@@ -13,8 +13,8 @@ h2{
   width: 500px;
   font-family: 'Rock  Salt', sans-serif;
   font-weight: 100;
-  font-size: 1.4em;
-  line-height: 25px;
+  font-size: 2em;
+  line-height: 35px;
   color: #333333;
 }
 
@@ -27,34 +27,7 @@ h2{
 .paper{
   color: #333333;
   font-weight:700;
-  font-size:1.4em;
-}
-
-.white{
-  color: #FFF;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 40px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.4;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-google {
-  background: #1f5cbf;
-  color: white;
+  font-size:2em;
 }
 
 img {
@@ -88,7 +61,7 @@ img {
   top:34%;
   left:20px;
   overflow: hidden;
-  width: 180px;
+  width: 290px;
   list-style: none;
 }
 
@@ -110,7 +83,7 @@ a {
   padding: 10px 14px;
   transition: 0.3s;
   border-radius: 16px;
-  font-size:1.4em;
+  font-size:2em;
 }
 
 
