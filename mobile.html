@@ -16,16 +16,12 @@
 	<button class="tabs active" onclick="showNewTab(event, 'home')">Home</button><br>
 	<button class="tabs" onclick="showNewTab(event, 'about me')">About Me</button><br>
 	<button class="tabs" onclick="showNewTab(event, 'research')">Publications</button><br>
-	<!--<button class="tabs" onclick="showNewTab(event, 'art')">Art</button><br>-->
 	<button class="tabs" onclick="showNewTab(event, 'animal rescue')">Animal Rescue</button>
 </div>
 
 
 <div style="margin:auto;width:800px;vertical-align:middle;">
-	<div id="home" class="body" style="margin-left:90px;">
-		<div class="profile-crop">
-			<img src="img/me.jpg" alt="avatar">
-		</div>
+	<div id="home" class="body" style="margin-left:200px;margin-top:100px;">
 		<div style="margin-left:-85px;">
 			<img style="width:100%;margin-top:-50px"src="img/sign.jpg" alt="sign">
 		</div>
@@ -99,18 +95,6 @@
 	</div>
 
 
-	<div id="art" class="body" style="display:none;">
-		<h2 style="margin-top:30px;">
-			I was formerly a youth & young adult competition artist in Indiana for a decade, primarily working in graphite portraits. Although I no longer compete or sell original pieces, I enjoy experimenting recently in things like pop surrealism (i.e. low brow art) and portrait sketches using a variety of mediums. I also enjoy other visual & applied art (i.e. ceramics, jewelry-making, papermaking). <br><br>Some of my random art scraps can be found at <span class="emphasis"><a href="https://www.instagram.com/brainfree.ze/" target="_blank">@brainfree.ze.</a></span>. You can also check out my <span class="emphasis"><a href="https://www.etsy.com/shop/BrainfreezeByAnna" target="_blank">online store.</a></span>.<br><br>
-			<img style="width:32%;"src="img/art/ceramics.PNG">
-			<img style="width:32%;"src="img/art/paper.png">
-			<img style="width:32%;"src="img/art/jewelry.PNG">
-			<img style="width:32%;"src="img/art/girl.PNG">
-			<img style="width:32%;"src="img/art/portraits.PNG">
-			<img style="width:32%;"src="img/art/dog.PNG">
-		</h2>
-	</div>
-
 
 	<div id="animal rescue" class="body" style="display:none;">
 		<h2 style="margin-top:100px;">
@@ -127,11 +111,6 @@
 </div>
 
 <script>
-
-var md = new MobileDetect(window.navigator.userAgent);
-if (md.mobile() || md.tablet()) {
-    document.location.href = 'mobile.html';
-}
 
 function showNewTab(event, newTab) {
   var i, body, tabs;
