@@ -21,7 +21,7 @@ h2{
 .emphasis{
   font-weight: bold;
   position: relative;
-  color: #382d15;
+  color: #333333;
 }
 
 .paper{
@@ -53,9 +53,9 @@ img {
 }
 
 a {
-  color: #dbb353;
+  color: #c92500;
   background-color: transparent;
-  text-decoration: underline;
+  font-style: italic;
   transition: 0.2s;
 }
 
@@ -69,7 +69,7 @@ a {
   cursor: pointer;
   padding: 10px 14px;
   border-radius: 16px;
-  font-size:2.6em;
+  font-size:2.4em;
 }
 
 
