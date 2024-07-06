@@ -43,21 +43,9 @@ img {
   margin-top:15%;
 }
 
-.profile-crop {
-  position: absolute;
-  transform: scale(1.2);
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-top: 150px;
-  margin-left: 550px;
-
-}
-
 .tab {
   position: absolute;
-  top:55%;
+  top:650px;
   left:20px;
   overflow: hidden;
   width: 350px;
