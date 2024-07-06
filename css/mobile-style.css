@@ -21,13 +21,13 @@ h2{
 .emphasis{
   font-weight: bold;
   position: relative;
-  font-size: 1.4em;
   color: #333333;
 }
 
 .paper{
   color: #333333;
   font-weight:700;
+  font-size:1.4em;
 }
 
 .white{
