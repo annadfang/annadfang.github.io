@@ -1,0 +1,155 @@
+<html>
+
+<body style="background-color:#fff;">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Karla|Almarai|Rock+Salt&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title> Anna Fang </title>
+	<meta name="description" content="PhD Student at Carnegie Mellon University, SCS, HCII." />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+</head>
+
+<div class="tab" >
+	<button class="tabs active" onclick="showNewTab(event, 'home')">Home</button><br>
+	<button class="tabs" onclick="showNewTab(event, 'about me')">About Me</button><br>
+	<button class="tabs" onclick="showNewTab(event, 'research')">Publications</button><br>
+	<!--<button class="tabs" onclick="showNewTab(event, 'art')">Art</button><br>-->
+	<button class="tabs" onclick="showNewTab(event, 'animal rescue')">Animal Rescue</button>
+</div>
+
+
+<div style="margin:auto;width:800px;vertical-align:middle;">
+	<div id="home" class="body" style="margin-left:90px;">
+		<div class="profile-crop">
+			<img src="img/me.jpg" alt="avatar">
+		</div>
+		<div style="margin-left:-85px;">
+			<img style="width:100%;margin-top:-50px"src="img/sign.jpg" alt="sign">
+		</div>
+
+		<h2>
+		I am a PhD student at <span class="emphasis">Carnegie Mellon University</span> in the <span class="emphasis">School of Computer Science</span>'s <span class="emphasis">Human-Computer Interaction Institute</span>. 
+		I am advised by <span class="emphasis"><a href="https://haiyizhu.com/">Professor Haiyi Zhu</a></span> in the Social AI Group. 
+		<br><br>		
+
+		My research is in <span class="emphasis">social computing + mental health</span>. I am interested in how social technology can enable personal and community well-being (e.g. mental health, social relationships) in <i>proactive</i> ways &#8212; those that are self-sustaining, self-correcting, or promote positive behaviors &#8212; rather than retrospective handling of harm. I use any relevant methods, but most often use a combination of network science, artificial intelligence, and social science. 
+		</h2>
+	</div>
+
+	<div id="about me" class="body" style="display:none;">
+		<h2 style="margin-top:100px;">
+			Hi, I'm Anna! Before graduate school, I graduated from Cornell University with a BS in Computer Science in 2019. At Cornell, I worked on a world-class <a href="https://cuair.org/">autonomous airplane project team</a> and taught extensively for undergraduate computer science courses. I also worked as a software engineer @ Amazon on recommender systems and the eCommerce platform before starting my PhD. <br><br>
+
+			Outside of research, I enjoy <span class="emphasis">drawing</span>, <span class="emphasis">ceramics</span> (<a href="https://en.wikipedia.org/wiki/Potter%27s_wheel">wheel-throwing</a>), <span class="emphasis"><a href="https://www.artsy.net/article/artsy-editorial-crash-course-basic-papermaking">papermaking</a></span>, <span class="emphasis">sewing clothes</span>, <span class="emphasis">watching UFC</span>, <span class="emphasis">reading</span>, and listening to <span class="emphasis">neo-psychedelic & hard rock music</span>! </a></span>
+			You can find some of my random art scraps (mostly in pop surrealism style) at <span class="emphasis"><a href="https://www.instagram.com/brainfree.ze/" target="_blank">@brainfree.ze</a></span> and things I sell for charity at my <span class="emphasis"><a href="https://www.etsy.com/shop/BrainfreezeByAnna" target="_blank">online store</a></span>.
+			I also really enjoy discussing and learning about <span class="emphasis">&#127793; sustainable living & animal rights</span>, <span class="emphasis">&#10084;&#65039;&#8205;&#129657; emotional health</span>, and <span class="emphasis">&#9784;&#65039; mindfulness</span>. 
+		</h2>
+	</div>
+
+	<div id="research" class="body" style="display:none;">
+		<h2 style="margin-left:0px;">
+
+			My work has been funded by the Center for Machine Learning & Health as both a <a href="https://www.cs.cmu.edu/cmlh/digital-health-archive/cmlh-digital-health-fellows-2022">2022 Fellow</a> and <a href="https://www.cs.cmu.edu/cmlh/digital-health-fellows">2024 Fellow</a>.<br><br>I am always excited to chat about social technologies and/or tech that helps people feel happy (e.g. healthier, joyful, safe, ...). Email me at: <i>annafang [at] cmu [dot] edu</i>. 
+			<br><br>
+
+			<i style="font-size:14px;">(* = equal contribution)</i><br>
+			&#9734; <span class="paper">Shaping Online Dialogue: Examining How Community Rules Affect Discussion Structures on Reddit.</span>
+			<i style="font-size:0.87em;"><br><span class="emphasis">Anna Fang</span>, Chris Wenjie Yang, Haiyi Zhu</i>
+			<br><br>
+			
+			&#9734; <span class="paper"><a href="https://arxiv.org/pdf/2303.11272.pdf" target="_blank">Agent-based Simulation of Real-Time Algorithmic Matching for Online Mental Health Communities.</a></span>
+			<i style="font-size:0.87em;"><br><span class="emphasis">Anna Fang*</span>, Yuhan Liu*, Robert Kraut, Glen Moriarty, Cris Firman, Haiyi Zhu<br>
+			Journal for Medical Informatics Research (JMIR) 2024
+			</i>
+
+			<br><br>
+
+			&#9734; <span class="paper"><a href="https://arxiv.org/pdf/2312.10775.pdf" target="_blank">What Makes Digital Support Effective? How Therapeutic Skills Affect Clinical Well-Being.</a></span> 
+			<i style="font-size:0.87em;"><br><span class="emphasis">Anna Fang*</span>, Chris Wenjie Yang*, Raj Sanjay Shah, Robert Kraut, Haiyi Zhu<br>
+			Proceedings of the ACM on Human-Computer Interaction (CSCW) 2024</i>
+			<br><br>
+			
+			&#9734; <span class="paper"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=01R8ZBkAAAAJ&citation_for_view=01R8ZBkAAAAJ:Tyk-4Ss8FVUC" target="_blank">Measuring the Stigmatizing Effects of a Highly Publicized Event on Online Mental Health Discourse.</a></span> 
+			<i style="font-size:0.87em;"><br><span class="emphasis">Anna Fang</span>, Haiyi Zhu<br>
+			Conference on Human Factors in Computing Systems (CHI) 2023
+			</i>
+			<br><br>
+			
+			&#9734; <span class="paper"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=01R8ZBkAAAAJ&citation_for_view=01R8ZBkAAAAJ:qjMakFHDy7sC" target="_blank">Matching for Peer Support: Exploring Algorithmic Matching for Online Mental Health Communities.</a></span>
+			<i style="font-size:0.87em;"><br><span class="emphasis">Anna Fang</span>, Haiyi Zhu<br>
+			Proceedings of the ACM on Human-Computer Interaction (CSCW) 2022
+			</i>
+			<br><br>
+			
+			&#9734; <span class="paper"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=01R8ZBkAAAAJ&citation_for_view=01R8ZBkAAAAJ:u5HHmVD_uO8C" target="_blank">Does Bad News Spread Faster?</a></span>
+			<i style="font-size:0.87em;"><br><span class="emphasis">Anna Fang</span>, Zina Ben Miled<br>
+			International Conference on Computing, Networking and Communications (ICNC) 2017
+			</i>
+			<br><br>
+
+			&#9734; <span class="paper"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=01R8ZBkAAAAJ&citation_for_view=01R8ZBkAAAAJ:u-x6o8ySG0sC" target="_blank">Exploring trust propagation behaviors in online communities</a></span> 
+			<i style="font-size:0.87em;"><br>Yefeng Ruan, Lina Alfantoukh, <span class="emphasis">Anna Fang</span>, Arjan Durresi<br>
+			International Conference on Network-based Information Systems 2014
+			</i>
+			<br><br><br><br>
+		</h2>
+	</div>
+
+
+	<div id="art" class="body" style="display:none;">
+		<h2 style="margin-top:30px;">
+			I was formerly a youth & young adult competition artist in Indiana for a decade, primarily working in graphite portraits. Although I no longer compete or sell original pieces, I enjoy experimenting recently in things like pop surrealism (i.e. low brow art) and portrait sketches using a variety of mediums. I also enjoy other visual & applied art (i.e. ceramics, jewelry-making, papermaking). <br><br>Some of my random art scraps can be found at <span class="emphasis"><a href="https://www.instagram.com/brainfree.ze/" target="_blank">@brainfree.ze.</a></span>. You can also check out my <span class="emphasis"><a href="https://www.etsy.com/shop/BrainfreezeByAnna" target="_blank">online store.</a></span>.<br><br>
+			<img style="width:32%;"src="img/art/ceramics.PNG">
+			<img style="width:32%;"src="img/art/paper.png">
+			<img style="width:32%;"src="img/art/jewelry.PNG">
+			<img style="width:32%;"src="img/art/girl.PNG">
+			<img style="width:32%;"src="img/art/portraits.PNG">
+			<img style="width:32%;"src="img/art/dog.PNG">
+		</h2>
+	</div>
+
+
+	<div id="animal rescue" class="body" style="display:none;">
+		<h2 style="margin-top:100px;">
+			Below is info about the wonderful animal(s) currently in my foster care from the <a href="https://humaneanimalrescue.org/">Humane Animal Rescue of Pittsburgh</a>.<br>
+			<span class="emphasis">Email me at annafang [at] cmu [dot] edu for adoption info!</span>
+		</h2>
+		<br>
+		<center><h2 style="margin-top:200px;">
+		<i>(Updated: May 2024)</i> <br>
+					<img style="width:52%;"src="img/duck.JPG">
+
+		</h2></center>
+	</div>
+</div>
+
+<script>
+
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.mobile() || md.tablet()) {
+    document.location.href = 'mobile.html';
+}
+
+function showNewTab(event, newTab) {
+  var i, body, tabs;
+
+  body = document.getElementsByClassName("body");
+  for (i = 0; i < body.length; i++) {
+    body[i].style.display = "none";
+  }
+
+  tabs = document.getElementsByClassName("tabs");
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].className = tabs[i].className.replace(" active", "");
+  }
+
+  document.getElementById(newTab).style.display = "block";
+  event.currentTarget.className += " active";
+}
+
+</script>
+
+</html>
