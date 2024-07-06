@@ -1,0 +1,119 @@
+h1{
+  font-style: normal;
+  width: 400px;
+  position: absolute;
+  font-size: 1.1em;
+  color: #000;
+  font-family: 'Almarai', sans-serif;
+  font-style: italic;
+}
+
+h2{
+  position: absolute;
+  width: 500px;
+  font-family: 'Rock  Salt', sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
+  line-height: 25px;
+  color: #333333;
+}
+
+.emphasis{
+  font-weight: bold;
+  position: relative;
+  font-size: 1.1em;
+  color: #333333;
+}
+
+.paper{
+  color: #333333;
+  font-weight:700;
+}
+
+.white{
+  color: #FFF;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.4;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-google {
+  background: #1f5cbf;
+  color: white;
+}
+
+img {
+  width:180px;
+  height:auto;
+  border-radius: 10%;
+}
+
+.body {
+  width:600px;
+  height:100px;
+  display:block;
+  margin-left:150px;
+  margin-top:15%;
+}
+
+.profile-crop {
+  position: absolute;
+  transform: scale(1.2);
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 150px;
+  margin-left: 550px;
+
+}
+
+.tab {
+  position: absolute;
+  top:34%;
+  left:20px;
+  overflow: hidden;
+  width: 180px;
+  list-style: none;
+}
+
+a {
+  color: #333333;
+  background-color: transparent;
+  text-decoration: underline dotted;
+  transition: 0.2s;
+}
+
+
+.tab button {
+  color: #a1a6ab;
+  font-family:'Helvetica Neue';
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  transition: 0.3s;
+  border-radius: 16px;
+  font-size:1.1em;
+}
+
+
+.tab button.active {
+  color: #333333;
+}
