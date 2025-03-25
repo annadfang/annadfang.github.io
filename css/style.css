@@ -1,6 +1,8 @@
 a {
-  color: #1772d0;
-  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+  text-decoration: underline dotted;
+  transition: 0.2s;
 }
 
 a:focus,
@@ -15,13 +17,14 @@ a {
   font-family: 'Albert Sans',sans-serif;
   font-size: 16px;
   font-weight:300;
+  line-height: 20px;
 }
 
 
 paper {
   font-family: 'Albert Sans',sans-serif;
   font-size: 17px;
-  font-weight: 300
+  font-weight: 400
 }
 
 authorship {
