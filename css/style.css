@@ -16,21 +16,21 @@ body,
 p,
 a {
   font-family: "M PLUS 2", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight:300;
-  line-height: 20px;
+  line-height: 15px;
 }
 
 
 paper {
   font-family: "Inconsolata", monospace;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 authorship {
   font-family: "Inconsolata", monospace;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
 }
 
