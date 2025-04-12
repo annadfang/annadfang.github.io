@@ -15,21 +15,24 @@ a:hover {
 body,
 p,
 a {
-  font-family: "M PLUS 2", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight:300;
   line-height: 15px;
 }
+b {
+  font-weight:600;
+}
 
 
 paper {
-  font-family: "Inconsolata", monospace;
-  font-size: 15px;
+  font-family: "Inter", monospace;
+  font-size: 13px;
   font-weight: 500;
 }
 
 authorship {
-  font-family: "Inconsolata", monospace;
+  font-family: "Inter", monospace;
   font-size: 13px;
   font-weight: 300;
 }
