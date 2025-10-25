@@ -46,3 +46,31 @@ authorship {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.back-wrap {
+  max-width: 700px;
+  margin: 12px auto 0;
+  padding: 0 2.5%;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 8px;
+  border-radius: 999px;
+  margin-left:-20px;
+  border: 2px solid #9fc9b8;
+  background: #edf7f1;
+  color: #2e5945;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size:11px;
+  cursor: pointer;
+}
+
+.back-btn:hover { filter: brightness(0.96); }
+.back-btn:active { transform: translateY(1px); }
+.back-btn:focus-visible {
+  outline: 3px solid #2e5945;
+  outline-offset: 2px;
+}
