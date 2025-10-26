@@ -120,4 +120,21 @@ span.highlight {
     max-width: 90%;
     margin-left: 0;
   }
+
+  p[style*="Roboto Mono"] {
+    font-size: 36px !important;  
+    line-height: 1.1;
+    word-break: keep-all;         
+    white-space: nowrap;         
+    text-align: center;          
+  }
+
+  .back-btn {
+    margin-left: 0;         
+  }
+
+  .back-wrap {
+    text-align: center;      
+    margin-top: 8px;
+  }
 }
