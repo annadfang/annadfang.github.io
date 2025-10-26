@@ -58,7 +58,7 @@ span.highlight {
   align-items: center;
   padding: 1px 8px;
   border-radius: 999px;
-  margin-left:-20px;
+  margin-left:-50px;
   border: 2px solid #9fc9b8;
   background: #edf7f1;
   color: #2e5945;
@@ -73,4 +73,51 @@ span.highlight {
 .back-btn:focus-visible {
   outline: 3px solid #2e5945;
   outline-offset: 2px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;                  
+  max-width: 800px;        
+  margin: 0 auto;           
+  padding: 0 2.5%;
+}
+
+.text-column {
+  flex: 1 1 700px;          
+  max-width: 750px;
+}
+
+.photo-column {
+  flex: 0 0 250px;            
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.side-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #dfe8e2;
+  object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-column,
+  .photo-column {
+    flex: none;
+    width: 90%;
+    max-width: 90%;
+    margin-left: 0;
+  }
 }
