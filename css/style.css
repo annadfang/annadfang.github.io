@@ -149,7 +149,9 @@ span.highlight { background-color: #ffffd0; }
   border: 2px solid #dfe8e2;
   object-fit: cover;
 }
-
+.section-title {
+  font-size: 18px;
+}
 @media (max-width: 800px) {
   .layout-container {
     flex-direction: column;
@@ -247,6 +249,9 @@ span.highlight { background-color: #ffffd0; }
   flex: 1 1 500px;
   max-width: 500px;
 }
+  #home br { display:none; }
+  #home p { margin-top: 10px !important; }
+
 }
 
 
