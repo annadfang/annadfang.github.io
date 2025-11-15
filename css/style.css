@@ -17,6 +17,10 @@ paper, authorship {
 paper { font-weight: 500; }
 authorship { font-weight: 300; }
 
+.title-name{
+  font-size:50px; 
+  font-family:'Roboto Mono', monospace;
+}
 a {
   background: transparent;
   text-decoration: underline dotted;
@@ -154,7 +158,10 @@ span.highlight { background-color: #ffffd0; }
     text-align: left;
     margin: 10px 0;  
   }
-
+  .title-name{
+  font-size:40px; 
+  font-family:'Roboto Mono', monospace;
+}
   .back-btn {
     margin-left: 0; 
     display: inline-flex;
