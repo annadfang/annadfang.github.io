@@ -159,9 +159,9 @@ span.highlight { background-color: #ffffd0; }
     margin: 10px 0;  
   }
   .title-name{
-  font-size:40px; 
+  font-size:45px; 
   font-family:'Roboto Mono', monospace;
-}
+  }
   .back-btn {
     margin-left: 0; 
     display: inline-flex;
