@@ -73,7 +73,7 @@ span.highlight { background-color: #ffffd0; }
 .sidebar {
   position: fixed;
   top: 300px;
-  left: 50%;
+  left: 40%;
   margin-left: -420px;
   border-left: 2px solid #dfe8e2;
   display: flex;
