@@ -5,192 +5,242 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-  <div class="layout-container">
+<body class="corner">
 
-    <main class="main-content">
-      <div class="corner-hero">
-        <p class="title-name" style="border-bottom: 3px solid #9fc9b8;display: inline-block;padding-bottom: 20px;">ANNA'S CORNER</p>
-        <p style="margin-top:2px;"><a href="index.html">← back to research</a></p>
-      </div>
-      <hr class="corner-divider">
+  <header class="corner-hero">
+    <div class="corner-stars"></div>
+    <div class="corner-hero-inner">
 
-      <div class="two-col-row">
-        <section id="blog">
-          <div class="back-wrap" style="max-width:none;">
-            <p class="back-btn">blog & writings</p>
+      <a href="index.html" class="corner-back"><<< back to research</a>
+
+<h1 class="hero-title glitch-on-load" data-text="anna's corner">anna's corner<span class="cursor"></span></h1>      <p>non-academic and academic-ish things. an ode to old school UX and the web from my youth!</p>
+
+    </div>
+  </header>
+  <div class="corner-page">
+    <div class="corner-two-col" id="blog">
+      <div class="corner-window">
+        <div class="corner-titlebar">
+          <span class="corner-dots"></span>
+          <span class="corner-section-label" style="margin-left:30px;">blogging</span>
+        </div>
+        <div class="corner-win-body">
+
+          <p class="corner-subhead">▸ my writings</p>
+          <div class="corner-writing-entry">
+            in-progress: musings on academia, doing my phd, and life.
+            <!-- <p class="corner-writing-meta">month year ...</p> -->
           </div>
-          <p style="margin-top:12px; margin-bottom:18px; max-width:400px;">
-            in-progress. thoughts on research, finishing my PhD, and academia coming soon
-          </p>
-          <ul class="blog-list">
 
-            <li>
-              <a href="#">TBD.</a><br>
-              <span class="blog-date">month year</span>
-              &nbsp;·&nbsp;
-              <span class="blog-desc">...</span>
-            </li>
+          <hr class="corner-pixel-divider">
+
+          <p class="corner-subhead">▸ resources</p>
+          <div class="corner-resource-entry">
+            <span class="corner-resource-arrow">→</span>
+            <a href="https://alexvermeer.com/a-lack-of-time-is-a-lack-of-priorities/">"Lack of time is a lack of priorities" by Alex Vermeer</a>
+          </div>
             
-
-          </ul>
-        </section>
-
-        <section id="hobbies" class="col-offset">
-          <div class="back-wrap" style="max-width:none;">
-            <p class="back-btn">art & hobbies</p>
+          <div class="corner-resource-entry">
+            <span class="corner-resource-arrow">→</span>
+            <a href="https://andrewkuz.net/cs-hci-research-hub/">Andrew Kuznetsov's guides on finding an advisor!</a>
           </div>
-          <ul class="hobby-list">
-            <li><b>Ceramics.</b> I've been wheel-throwing since 2022. I first learned at <a href="https://pghartsmedia.org/">PCA&M</a> in Pittsburgh, PA!</li>
-            <li><b>Drawing and painting.</b> </li>
-            <li><b>Birding.</b> Recently started! You can ask me my favorite bird facts. My favorite birds are the American Woodcock and American Goldfinch. Life list: 20 species.</li>
+          
 
-          </ul>
-        </section>
-
+        </div>
       </div>
 
-      <hr class="corner-divider">
+      <div class="corner-window" id="hobbies">
+        <div class="corner-titlebar">
+          <span class="corner-dots"></span>
+        <span class="corner-section-label" style="margin-left:30px;">hobbies, art (photos coming soon)</span>
+        </div>
+        <div class="corner-win-body">
 
-        <section id="animals">
-        <div class="back-wrap" style="max-width:none;">
-          <p class="back-btn">animals fostered</p>
-        </div>
-        <p style="margin-top:12px;max-width: 700px;">
-          My retirement dream is to host a 🌱 rescue and animal sanctuary. Besides my current cat Pearl and beloved dog Milo (2012-2024 🦋), I've been involved with volunteering and fostering animals for local shelters since 2019! <br><br>
-          Here is a space for the lovely animals that I've gotten to know over the years!
-        </p>
+          <div class="corner-hobby-row">
+            <div>
+              <span class="corner-hobby-tag">🏺 Ceramics</span>
+              <p class="corner-hobby-desc">I've been wheel-throwing since 2022, since I first learned at <a href="https://pghartsmedia.org/">PCA&M</a> in Pittsburgh, PA!</p>
+            </div>
+          </div>
+          <div class="corner-hobby-row">
+            <div>
+              <span class="corner-hobby-tag">🎨 Drawing and Painting</span>
+            </div>
+          </div>
+          <div class="corner-hobby-row">
+            <div>
+              <span class="corner-hobby-tag">🐦 Birding</span>
+              <p class="corner-hobby-desc">Recently started! You can ask me my favorite bird facts. My favorite birds are currently the American Woodcock + American Goldfinch. Life list: 20 species.</p>
+            </div>
+          </div>
 
-        <div class="animal-grid">
-            <div class="animal-card" style="border-color: #9fc9b8;">
-            <img src="img/animals/Milo.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Milo</paper>
-              <p>The loveliest dog anyone could ever ask for! Adopted in 2019 from <a href="https://greyhoundpetsinc.org/">GPI</a> in Seattle (an *amazing* organization) after being a rescued <a href="https://www.ohiolurcherproject.com/lurcher-racing/">backyard racer</a> in Ohio & Idaho. Passed peacefully in 2024.</p>
-            </div>
         </div>
-        <div class="animal-card" style="border-color: #9fc9b8;">
-            <img src="img/animals/pearl.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Pearl</paper>
-              <p>Loving, chubby, anxious, perpetually sick, cuddly, old-man-stuck-in-a-girl-cat-body! Not as angry as she looks in this photo, I just love this photo. Adopted in 2024 from <a href="...">HARP</a> in Pittsburgh.</p>
-            </div>
+      </div>
+
+    </div>
+
+    <section id="animals">
+      <div class="corner-section-head">
+        <span class="corner-section-label">animals fostered</span>
+        <span class="corner-section-line"></span>
+      </div>
+         <p>My retirement dream is to host a 🌱 rescue and animal sanctuary. Besides my current cat Pearl and beloved dog Milo (2012–2024 🦋), I've been involved with volunteering and fostering animals for local shelters since 2019!<br><br>
+        Here is a space for the lovely animals that I've gotten to know over the years!</p>
+
+      <div class="animal-grid">
+
+        <div class="animal-card special" style="border: 3px solid #2d64a8;">
+          <img src="img/animals/Milo.jpg" alt="Milo">
+          <div class="animal-info">
+            <span class="animal-name">★ Milo ★</span>
+            <p>The loveliest dog I could ever ask for! Adopted in 2019 from <a href="https://greyhoundpetsinc.org/">GPI</a> in Seattle after being a rescued <a href="https://www.ohiolurcherproject.com/lurcher-racing/">backyard racer</a>. He healed a lot of hearts in his time. Crossed the rainbow bridge in 2024.</p>
+          </div>
         </div>
-        <div class="animal-card">
-            <img src="img/animals/beetle.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Beetle</paper>
-              <p>Sibling of Raven. Just the most adorable cat I've ever seen! Had the cutest short stumpy body and warmed up quickly. </p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/raven.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Raven</paper>
-              <p>Sibling of Beetle. A bit sassy but tolerated me :) She was so beautiful, and she knew it! The much more playful and brave of her and her sibling Beetle!</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/billions.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Chicken</paper>
-              <p>Came in matted, not potty trained, and scared of the outside. Named him Chicken since he looked like a chicken when he first came :) Loved to lick & be near you at all times. He left joyful, comfortable, potty trained, and found a home quickly once ready!</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/pichuandbulbasaur.png" alt="Name">
-            <div class="animal-card-info">
-              <paper>Bulbasaur (grey)</paper>
-              <p>Sibling of Pichu. Very shy naturally, but brave if he sees his sibling adventure first!</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/pichuold.png" alt="Name">
-            <div class="animal-card-info">
-              <paper>Pichu (orange)</paper>
-              <p>Sibling of Bulbasaur. Super playful, brave, and the leader of his siblings!</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/duck.JPG" alt="Name">
-            <div class="animal-card-info">
-              <paper>Duck</paper>
-              <p>Just the funniest cat I've fostered. Got his head stuck in various objects, stood up like a human, and liked to watch basketball. So loving :-)</p>
-            </div>
-        </div>
-         <div class="animal-card">
-            <img src="img/animals/esme.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Esme</paper>
-              <p>Loved life and super friendly. Protective of me from the moment she met me! I miss her a lot.</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/disco.jpg">
-            <div class="animal-card-info">
-              <paper>(panic at the) Disco</paper>
-              <p>The smarter and more cautious sibling to Hayley (Williams). Took some time to warm up, then became a cuddly lovebug!</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/hayley.jpg">
-            <div class="animal-card-info">
-              <paper>Hayley (Williams)</paper>
-              <p>Sibling of Disco. Stubborn, brave, ambitious, and out to conquer the world with her little mustache.</p>
-            </div>
-        </div>
-         <div class="animal-card">
-            <img src="img/animals/pichu.JPG">
-            <div class="animal-card-info">
-              <paper>Pichu</paper>
-              <p>One of the Pokemon litter, but stayed with us the longest as the runt. Pichu was hilarious and SO TINY.</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/tina.JPG">
-            <div class="animal-card-info">
-              <paper>Tina</paper>
-              <p>My sister's cat! Sassy, independent, and loyal to those she trusts!</p>
-            </div>
-        </div>
-        <div class="animal-card">
-            <img src="img/animals/pokemonlitter.jpg" alt="Name">
-            <div class="animal-card-info">
-              <paper>Squirtle, Umbreon, Snorlax, and Pichu</paper>
-              <p>Clearly delineated themselves into the (1) bigger siblings (Squirtle / Umbreon) who were adventurous, bold, and  ready for adoption quickly, and (2) the smaller, more shy siblings (Snorlax / Pichu).</p>
-            </div>
-        </div>
-        
-        <div class="animal-card">
-        <img src="img/animals/snorlax.jpg" alt="Name">
-        <div class="animal-card-info">
-            <paper>Snorlax.</paper>
-            <p>Stared at me all day with love. Snorlax was born with fatal internal organ issues, but was well-loved in his short time and passed with love & care with myself & HARP's caring staff.</p>
-            </div>
+
+        <div class="animal-card special" style="border: 3px solid #2d64a8;">
+          <img src="img/animals/pearl.jpg" alt="Pearl">
+          <div class="animal-info">
+            <span class="animal-name">★ Pearl ★</span>
+            <p>Loving, chubby, anxious, perpetually sick, cuddly, old-man-stuck-in-a-girl-cat-body! Adopted in 2024 from <a href="https://humaneanimalrescue.org/">HARP</a> in Pittsburgh. She isn't as grumpy as she looks; I just like this photo of her. :-)</p>
+          </div>
         </div>
 
         <div class="animal-card">
-        <img src="img/animals/unknown.jpg" alt="Name">
-        <div class="animal-card-info">
-            <paper>Unnamed kitty.</paper>
-            <p></p>
-            </div>
+          <img src="img/animals/beetle.jpg" alt="Beetle">
+          <div class="animal-info">
+            <span class="animal-name">Beetle</span>
+            <p>Sibling of Raven. Just the most adorable cat I've ever seen! Had the cutest short stumpy body and warmed up after a bit. Loved to lick!</p>
+          </div>
         </div>
 
+        <div class="animal-card">
+          <img src="img/animals/raven.jpg" alt="Raven">
+          <div class="animal-info">
+            <span class="animal-name">Raven</span>
+            <p>Sibling of Beetle. A bit sassy but tolerated me :) So beautiful, and she knew it!</p>
+          </div>
         </div>
-      </section>
 
-      <a href="index.html" class="back-link-bottom">← back to research</a>
+        <div class="animal-card">
+          <img src="img/animals/billions.jpg" alt="Chicken">
+          <div class="animal-info">
+            <span class="animal-name">Chicken</span>
+            <p>Came in matted, scared of outside noise, and not potty trained. Left joyful, comfortable, and ready to be a wonderful family member (& indeed found a home quickly)!</p>
+          </div>
+        </div>
 
-    </main>
+        <div class="animal-card">
+          <img src="img/animals/pichuandbulbasaur.png" alt="Bulbasaur">
+          <div class="animal-info">
+            <span class="animal-name">Bulbasaur (grey)</span>
+            <p>Sibling of Pichu. Naturally very shy, but would come out if he saw his sibling adventure first!</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/pichuold.png" alt="Pichu orange">
+          <div class="animal-info">
+            <span class="animal-name">Pichu (orange)</span>
+            <p>Sibling of Bulbasaur. Super playful, brave, and the leader of his siblings!</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/duck.JPG" alt="Duck">
+          <div class="animal-info">
+            <span class="animal-name">Duck</span>
+            <p>Funniest cat I've ever met. Got his head stuck in various objects, stood like a human, liked to watch basketball.</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/esme.jpg" alt="Esme">
+          <div class="animal-info">
+            <span class="animal-name">Esme</span>
+            <p>Loved life and super friendly. I felt sad to see how many judged her from her appearance before getting to know her. Protective of me from the moment she met me! I miss her a lot.</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/stella.jpeg">
+          <div class="animal-info">
+            <span class="animal-name">Stella</span>
+            <p>I've never seen a cat shed so much. Came from a really unfortunate situation but was so resilient and confident!</p>
+          </div>
+        </div>
+        <div class="animal-card">
+          <img src="img/animals/disco.jpg" alt="Disco">
+          <div class="animal-info">
+            <span class="animal-name">Disco</span>
+            <p>The smarter and more cautious sibling to Hayley. Took time to warm up, then became a cuddly lovebug!</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/hayley.jpg" alt="Hayley Williams">
+          <div class="animal-info">
+            <span class="animal-name">Hayley (Williams)</span>
+            <p>Sibling of Disco. Stubborn, brave, ambitious, out to conquer the world with her little mustache.</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/pichu.JPG" alt="Pichu">
+          <div class="animal-info">
+            <span class="animal-name">Pichu</span>
+            <p>One of the Pokemon litter, and stayed with us the longest as the runt. SO cute and hilariously tiny.</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/tina.JPG" alt="Tina">
+          <div class="animal-info">
+            <span class="animal-name">Tina</span>
+            <p>So sassy, independent, and loyal to those she trusts!</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/pokemonlitter.jpg" alt="Pokemon litter">
+          <div class="animal-info">
+            <span class="animal-name">Piplup, Umbreon, Snorlax, and Pichu</span>
+            <p>The pokemon litter of 4! Quickly divided into the bigger siblings, who were adventurous and bold, and the smaler siblings who were much more shy.</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/snorlax.jpg" alt="Snorlax">
+          <div class="animal-info">
+            <span class="animal-name">Snorlax</span>
+            <p>Stared at me all day with love. Unfortunately, Snorlax was born with fatal internal organ issues. He was well-loved in his short time. 🦋</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/pasha.png">
+          <div class="animal-info">
+            <span class="animal-name">Pasha</span>
+            <p>One of my first fosters. Loved to use her jaw to shovel food mounds into her mouth. Easiest foster ever!</p>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <img src="img/animals/unknown.jpg" alt="Unnamed kitty">
+          <div class="animal-info">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </div>
 
   <script>
-    document.querySelectorAll('.sidebar a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
@@ -199,5 +249,19 @@
     });
   </script>
 
+<script>
+window.addEventListener('load', () => {
+  const title = document.querySelector('.hero-title.glitch-on-load');
+  if (!title) return;
+
+  setTimeout(() => {
+    title.classList.add('active');
+
+    setTimeout(() => {
+      title.classList.remove('active');
+    }, 450);
+  }, 250);
+});
+</script>
 </body>
 </html>
