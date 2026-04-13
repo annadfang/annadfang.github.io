@@ -1,67 +1,63 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="corner">
-
   <header class="corner-hero">
-  <div class="corner-stars"></div>
+    <div class="corner-stars"></div>
 
-  <div class="corner-hero-inner corner-hero-grid">
-    <div class="corner-hero-main">
-      <a href="../" class="corner-back"><<< back to research</a>
+    <div class="corner-hero-inner corner-hero-grid">
+      <div class="corner-hero-main">
+        <a href="../" class="corner-back"><<< back to research</a>
 
-      <h1 class="hero-title glitch-on-load" data-text="anna's corner">
-        anna's corner<span class="cursor"></span>
-      </h1>
+        <h1 class="hero-title glitch-on-load" data-text="anna's corner">
+          anna's corner<span class="cursor"></span>
+        </h1>
 
-      <p>non-academic and academic-ish things. an ode to web blogs from my youth!</p>
-    </div>
+        <p>non-academic and academic-ish things. an ode to web blogs from my youth!</p>
+      </div>
 
-    <div class="corner-hero-status">
+      <div class="corner-hero-status">
+        <div class="corner-hero-music">
+          <div class="corner-hero-music-top">
+            <div class="corner-record"></div>
 
-<div class="corner-hero-music">
-  <div class="corner-hero-music-top">
-   <div class="corner-record"></div>
+            <div class="corner-now-content">
+              <div class="corner-mini-label">now playing ♪</div>
+              <div class="corner-hero-song">
+                <span class="song-title">Hunnybee</span>
+                <span class="song-artist">- Unknown Mortal Orchestra</span>
+              </div>
+            </div>
 
-    <div class="corner-now-content">
-      <div class="corner-mini-label">now playing ♪</div>
-      <div class="corner-hero-song">
-        <span class="song-title">Hunnybee</span>
-        <span class="song-artist">- Unknown Mortal Orchestra</span>
+            <button id="music-toggle" class="music-btn" aria-label="Pause music">▌▌</button>
+          </div>
+
+          <audio id="audio-player" preload="auto" loop>
+            <source src="Unknown Mortal Orchestra - Hunnybee (Official Video).mp3" type="audio/mpeg">
+          </audio>
+        </div>
       </div>
     </div>
-
-    <button id="music-toggle" class="music-btn" aria-label="Pause music">▌▌</button>
-  </div>
-
-  <audio id="audio-player" preload="auto" loop>
-    <source src="Unknown Mortal Orchestra - Hunnybee (Official Video).mp3" type="audio/mpeg">
-  </audio>
-</div>
-    </div>
-  </div>
-</header>
-
+  </header>
 
   <div class="corner-page">
-
     <div class="corner-two-col" id="blog">
       <div class="corner-window">
         <div class="corner-titlebar">
           <span class="corner-dots"></span>
-          <span class="corner-section-label" style="margin-left:30px;">blogging</span>
+          <span class="corner-section-label" style="margin-left: 30px;">blogging</span>
         </div>
-        <div class="corner-win-body">
 
-          <p class="corner-subhead">▸ my writings</p>
+        <div class="corner-win-body">
+          <p class="corner-subhead">>> my writings</p>
           <div class="corner-writing-entry">
             in-progress: musings on academia, doing my phd, and life.
             <!-- <p class="corner-writing-meta">month year ...</p> -->
@@ -69,49 +65,58 @@
 
           <hr class="corner-pixel-divider">
 
-          <p class="corner-subhead">▸ resources</p>
-          <div class="corner-resource-entry">
-            <span class="corner-resource-arrow">→</span>
-            <a href="https://alexvermeer.com/a-lack-of-time-is-a-lack-of-priorities/">"Lack of time is a lack of priorities" by Alex Vermeer</a>
-          </div>
-            
-          <div class="corner-resource-entry">
-            <span class="corner-resource-arrow">→</span>
-            <a href="https://andrewkuz.net/cs-hci-research-hub/">Andrew Kuznetsov's guides on finding an advisor!</a>
-          </div>
-          
+          <p class="corner-subhead">>> resources</p>
 
+          <div class="corner-resource-entry">
+            <span class="corner-resource-arrow">→</span>
+            <a href="https://alexvermeer.com/a-lack-of-time-is-a-lack-of-priorities/">
+              "Lack of time is a lack of priorities" by Alex Vermeer
+            </a>
+          </div>
+
+          <div class="corner-resource-entry">
+            <span class="corner-resource-arrow">→</span>
+            <a href="https://andrewkuz.net/cs-hci-research-hub/">
+              Andrew Kuznetsov's guides on finding an advisor!
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="corner-window" id="hobbies">
         <div class="corner-titlebar">
           <span class="corner-dots"></span>
-        <span class="corner-section-label" style="margin-left:30px;">hobbies, art (photos coming soon)</span>
+          <span class="corner-section-label" style="margin-left: 30px;">hobbies, art (photos coming soon)</span>
         </div>
-        <div class="corner-win-body">
 
+        <div class="corner-win-body">
           <div class="corner-hobby-row">
             <div>
               <span class="corner-hobby-tag">🏺 Ceramics</span>
-              <p class="corner-hobby-desc">I've been wheel-throwing since 2022, since I first learned at <a href="https://pghartsmedia.org/">PCA&M</a> in Pittsburgh, PA!</p>
+              <p class="corner-hobby-desc">
+                I've been wheel-throwing since 2022, since I first learned at
+                <a href="https://pghartsmedia.org/">PCA&amp;M</a> in Pittsburgh, PA!
+              </p>
             </div>
           </div>
+
           <div class="corner-hobby-row">
             <div>
               <span class="corner-hobby-tag">🎨 Drawing and Painting</span>
             </div>
           </div>
+
           <div class="corner-hobby-row">
             <div>
               <span class="corner-hobby-tag">🐦 Birding</span>
-              <p class="corner-hobby-desc">Recently started! You can ask me my favorite bird facts. My favorite birds are currently the American Woodcock + American Goldfinch. Life list: 20 species.</p>
+              <p class="corner-hobby-desc">
+                Recently started! You can ask me my favorite bird facts. My favorite birds are currently the
+                American Woodcock + American Goldfinch. Life list: 20 species.
+              </p>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
 
     <section id="animals">
@@ -119,6 +124,7 @@
         <span class="corner-section-label">animals fostered</span>
         <span class="corner-section-line"></span>
       </div>
+
          <p>My retirement dream is to host a 🌱 rescue and animal sanctuary. Besides my current cat Pearl and beloved dog Milo (2012–2024 🦋), I've been involved with volunteering and fostering animals for local shelters since 2019!<br><br>
         Here is a space for the lovely animals that I've gotten to know over the years!</p>
 
@@ -418,7 +424,6 @@ window.addEventListener('load', () => {
       await audio.play();
       fadeInAudio();
     } catch (err) {
-      // autoplay was blocked by the browser
     } finally {
       updateButton();
       updateRecord();
