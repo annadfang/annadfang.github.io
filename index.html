@@ -118,7 +118,6 @@
       .then(data => document.getElementById('research-container').innerHTML = data)
       .catch(err => console.error('Error loading research section:', err));
 
-    // Smooth scroll for sidebar links
     document.querySelectorAll('.sidebar a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();

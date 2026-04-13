@@ -582,9 +582,14 @@ body.corner .animal-card:hover {
 
 .corner-record.spinning {
   animation:
-    spinRecord 1.2s linear infinite,
-    recordGlow 1.8s ease-in-out infinite alternate,
-    recordPulse 1.6s ease-in-out infinite;
+    spinAndPulse 2s linear infinite,
+    recordGlow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes spinAndPulse {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.06); }
+  100% { transform: rotate(360deg) scale(1); }
 }
 
 .corner-page {
@@ -952,39 +957,56 @@ body.corner .animal-card:hover {
 }
 
 @media (max-width: 700px) {
-  .corner-two-col {
-    grid-template-columns: 1fr;
+  .corner-section-label { font-size: 10px; padding: 5px 10px; border-radius: 8px; }
+  .corner-titlebar .corner-section-label { font-size: 8px; margin-left: 10px !important; }
+  .corner-hero-song { white-space: normal; font-size: 13px; }
+  .corner-hero-music { margin-top: 0; max-width: 100%; }
+  .corner-hero-inner.corner-hero-grid { padding: 24px 14px 20px; gap: 12px; }
+  .animal-grid { grid-template-columns: repeat(2, 1fr); }
+  body.corner p, body.corner a, body.corner div { font-size: 15px; }
+  .corner-win-body { padding: 12px 12px 14px; }
+}
+@media (max-width: 800px) {
+  .corner-hero-inner.corner-hero-grid {
+    column-gap: 16px;
+    padding: 28px 14px 20px;
+    grid-template-columns: 1fr auto;
+    align-items: start;
   }
 
-  .corner-page {
-    padding: 24px 14px 56px;
+  .corner-hero-status {
+    align-items: flex-start;
+    width: auto;
   }
 
-  .corner-hero-inner {
-    padding: 30px 14px 24px;
+  .corner-hero-music {
+    max-width: 220px;
+    min-width: 180px;
+    margin-top: 0;
   }
 
-  .animal-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  .corner-hero-song {
+    font-size: 13px;
+    white-space: normal;
+    word-break: break-word;
   }
 }
 
-@media (max-width: 800px) {
-  .corner-hero-grid {
+@media (max-width: 480px) {
+  .corner-hero-inner.corner-hero-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
   }
 
   .corner-hero-status {
     width: 100%;
-    align-items: flex-start;
   }
 
   .corner-hero-music {
-    max-width: none;
+    max-width: 100%;
+    min-width: 0;
   }
 
-  .corner-hero-song {
-    font-size: 14px;
+  .hero-title {
+    font-size: clamp(26px, 8vw, 40px);
   }
 }

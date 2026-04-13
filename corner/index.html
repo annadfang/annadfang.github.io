@@ -26,24 +26,27 @@
 
       <div class="corner-hero-status">
         <div class="corner-hero-music">
-          <div class="corner-hero-music-top">
-            <div class="corner-record"></div>
+  <div class="corner-hero-music-top">
+    <div class="corner-record"></div>
+    <div class="corner-now-content">
+      <div class="corner-mini-label">now playing ♪</div>
+      <div class="corner-hero-song">
+        <span class="song-title">Hunnybee</span>
+        <span class="song-artist">- Unknown Mortal Orchestra</span>
+      </div>
+    </div>
+    <button id="music-toggle" class="music-btn" aria-label="Pause music">▌▌</button>
+  </div>
+<!-- weather thingy -->
+<div style="margin-top:8px; padding-top:7px; border-top:1px dotted rgba(163,149,133,0.4); display:flex; align-items:center; gap:10px;">
+  <span style="font-family:'Press Start 2P',monospace; font-size:7px; color:rgba(58,49,44,0.55); white-space:nowrap;">pittsburgh, pa <span id="weather-icon">☁</span></span>
+  <span id="weather-temp" style="font-family:'VT323',monospace; font-size:17px; color:#3a312c; line-height:1;">—</span>
+</div>
 
-            <div class="corner-now-content">
-              <div class="corner-mini-label">now playing ♪</div>
-              <div class="corner-hero-song">
-                <span class="song-title">Hunnybee</span>
-                <span class="song-artist">- Unknown Mortal Orchestra</span>
-              </div>
-            </div>
-
-            <button id="music-toggle" class="music-btn" aria-label="Pause music">▌▌</button>
-          </div>
-
-          <audio id="audio-player" preload="auto" loop>
-            <source src="Unknown Mortal Orchestra - Hunnybee (Official Video).mp3" type="audio/mpeg">
-          </audio>
-        </div>
+  <audio id="audio-player" preload="auto" loop>
+    <source src="Unknown Mortal Orchestra - Hunnybee (Official Video).mp3" type="audio/mpeg">
+  </audio>
+</div>
       </div>
     </div>
   </header>
@@ -301,7 +304,9 @@ window.addEventListener('load', () => {
 });
 </script>
 
-<script>
+<!-- cute cursor trail! -->
+<script> 
+if (window.matchMedia('(pointer: fine)').matches) {
   const TRAIL_LENGTH = 14;
   const SYMBOLS = ['✦', '✧', '⋆', '·', '★', '✿', '˚'];
   const LERP = 0.35;
@@ -341,12 +346,10 @@ window.addEventListener('load', () => {
     if (started) {
       dots[0].x = lerp(dots[0].x, mouse.x, LERP);
       dots[0].y = lerp(dots[0].y, mouse.y, LERP);
-
       for (let i = 1; i < TRAIL_LENGTH; i++) {
         dots[i].x = lerp(dots[i].x, dots[i - 1].x, LERP);
         dots[i].y = lerp(dots[i].y, dots[i - 1].y, LERP);
       }
-
       dots.forEach((dot, i) => {
         dot.el.style.left = dot.x + 'px';
         dot.el.style.top = dot.y + 'px';
@@ -356,8 +359,8 @@ window.addEventListener('load', () => {
     }
     requestAnimationFrame(animate);
   }
-
   animate();
+}
 </script>
 
 <script>
@@ -458,6 +461,38 @@ window.addEventListener('load', () => {
     tryAutoplay();
   });
 </script>
+<script>
+async function fetchWeather() {
+  try {
+    const res = await fetch(
+      'https://api.open-meteo.com/v1/forecast?latitude=40.4406&longitude=-79.9959&current=temperature_2m,weathercode&daily=temperature_2m_max,temperature_2m_min&timezone=America%2FNew_York&forecast_days=1'
+      // melbourne 'https://api.open-meteo.com/v1/forecast?latitude=-37.8136&longitude=144.9631&current=temperature_2m,weathercode&daily=temperature_2m_max,temperature_2m_min&timezone=Australia%2FMelbourne&forecast_days=1'
+    );
+    const data = await res.json();
+    const temp = Math.round(data.current.temperature_2m);
+    const high = Math.round(data.daily.temperature_2m_max[0]);
+    const low  = Math.round(data.daily.temperature_2m_min[0]);
+    const code = data.current.weathercode;
 
+    const condition = code === 0 ? 'clear' :
+                      code <= 2 ? 'partly cloudy' :
+                      code <= 48 ? 'cloudy' :
+                      code <= 67 ? 'rainy' :
+                      code <= 77 ? 'snowy' : 'stormy';
+
+    const icon = code === 0 ? '☀' :
+                 code <= 2 ? '⛅' :
+                 code <= 48 ? '☁' :
+                 code <= 67 ? '☂' : '⚡';
+
+    document.getElementById('weather-temp').textContent = `${temp}°C — ${condition}`;
+    document.getElementById('weather-icon').textContent = icon;
+    document.getElementById('weather-hilo').textContent = `↑${high} ↓${low}`;
+  } catch (e) {
+  }
+}
+
+window.addEventListener('load', fetchWeather);
+</script>
 </body>
 </html>
