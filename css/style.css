@@ -595,7 +595,7 @@ body.corner .animal-card:hover {
 .corner-page {
   position: relative;
   z-index: 2;
-  max-width: 1020px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 34px 20px 70px;
 }
@@ -653,7 +653,7 @@ body.corner .animal-card:hover {
 }
 
 .corner-win-body {
-  padding: 18px 18px 20px;
+  padding: 15px 10px 10px;
   background:
     linear-gradient(rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0)),
     transparent;
@@ -704,7 +704,7 @@ body.corner .animal-card:hover {
 .corner-hobby-row {
   display: flex;
   align-items: flex-start;
-  padding: 3px 8px;
+  padding: 8px 8px;
   border-bottom: 1px dotted rgba(163, 149, 133, 0.45);
   break-inside: avoid;
 }
@@ -738,7 +738,6 @@ body.corner .animal-card:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
 }
 
 .corner-section-label {
