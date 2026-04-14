@@ -612,7 +612,16 @@ body.corner .animal-card:hover {
   background: var(--panel);
   border: 2px solid var(--line);
   box-shadow:
-    3px 3px 0 var(--bg-alt),
+    5px 5px 0 #b0a497;
+  transition:
+    transform 0.08s steps(2, end),
+    box-shadow 0.08s steps(2, end);
+}
+
+.corner-window:hover {
+  transform: translate(-2px, -2px);
+  box-shadow:
+    7px 7px 0 var(--line),
     0 0 0 1px rgba(255, 255, 255, 0.4) inset;
 }
 
@@ -687,15 +696,25 @@ body.corner .animal-card:hover {
   color: var(--rose-deep);
 }
 
+.corner-hobby-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
 .corner-hobby-row {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  padding: 10px 0;
+  padding: 10px 10px;
   border-bottom: 1px dotted rgba(163, 149, 133, 0.45);
 }
 
-.corner-hobby-row:last-child {
+.corner-hobby-row:nth-child(odd) {
+  border-right: 1px dotted rgba(163, 149, 133, 0.45);
+}
+
+.corner-hobby-row:nth-last-child(-n+2) {
   border-bottom: none;
 }
 
