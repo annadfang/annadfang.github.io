@@ -697,31 +697,30 @@ body.corner .animal-card:hover {
 }
 
 .corner-hobby-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  columns: 2;
+  column-gap: 0;
 }
 
 .corner-hobby-row {
   display: flex;
-  gap: 12px;
   align-items: flex-start;
-  padding: 10px 10px;
+  padding: 3px 8px;
   border-bottom: 1px dotted rgba(163, 149, 133, 0.45);
+  break-inside: avoid;
 }
 
 .corner-hobby-row:nth-child(odd) {
   border-right: 1px dotted rgba(163, 149, 133, 0.45);
 }
 
-.corner-hobby-row:nth-last-child(-n+2) {
+.corner-hobby-row:last-child {
   border-bottom: none;
 }
 
 .corner-hobby-tag {
   display: inline-block;
-  margin-bottom: 4px;
-  padding: 3px 6px;
+  margin-bottom: 3px;
+  padding: 3px 5px;
   font-family: 'Press Start 2P', monospace;
   font-size: 7px;
   color: var(--ink);
