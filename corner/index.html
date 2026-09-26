@@ -895,7 +895,10 @@
         const key = norm(ALIASES[norm(rawName)] || rawName);
         const path = byName.get(key) || byName.get(norm(rawName));
         const microKey = Object.keys(MICRO).find(k => norm(k) === key || norm(k) === norm(rawName));
-
+        const MICRO_FLAGS = {
+          "Hong Kong": "HK",
+          "Macau": "MO"
+        };
         if (path) {
           path.classList.add('been');
           if (trip.home) path.classList.add('home');
@@ -913,7 +916,12 @@
           dot.setAttribute('aria-label', `${microKey}. ${trip.when || ''} ${trip.note || ''}`.trim());
           dot.dataset.c = microKey;
           pins.appendChild(dot);
-          entries.push({ label: microKey, flag: '📍', trip, el: dot });
+          entries.push({
+              label: microKey,
+              flag: MICRO_FLAGS[microKey] ? flagOf(MICRO_FLAGS[microKey]) : '📍',
+              trip,
+              el: dot
+            });
         } else {
           entries.push({ label: rawName, flag: '❓', trip, el: null });
         }
