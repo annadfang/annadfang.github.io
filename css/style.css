@@ -15,17 +15,17 @@ a {
 b { font-weight: 600; }
 
 paper, authorship {
-  font-family: "Inter", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
+  line-height: 1.1;
 }
-paper { font-weight: 500; }
-authorship { font-weight: 300; }
+paper { font-weight: 500;}
+authorship { font-weight: 200; }
 
 .title-name {
   font-family: "Fraunces", serif;
   font-size: 48px;
   font-weight: 400;
-  color: #6e2f39;
   letter-spacing: -0.02em;
   line-height: 1;
   margin-bottom: 20px;
@@ -263,17 +263,17 @@ span.highlight { background-color: #ffffd0; }
 .paper-entry {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 25px;
+  gap: 5px; 
+  margin-bottom: 15px;
 }
 
 .paper-entry .teaser-image {
-  width: 200px;        
-  height: 120px;       
+  width: 300px; 
+  height: auto;
+  aspect-ratio: 3.5 / 2; 
+  object-fit: cover;
   border-radius: 8px;
-  object-fit: cover;    
-  object-position: center; 
-  flex-shrink: 0;   
+  flex-shrink: 0;
 }
 
 .paper-entry .paper-info {
