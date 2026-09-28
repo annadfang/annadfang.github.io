@@ -21,9 +21,14 @@ paper, authorship {
 paper { font-weight: 500; }
 authorship { font-weight: 300; }
 
-.title-name{
-  font-size:50px; 
-  font-family:'Roboto Mono', monospace;
+.title-name {
+  font-family: "Fraunces", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #6e2f39;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 a {
   background: transparent;
