@@ -927,7 +927,6 @@
         }
       });
 
-      /* counter + meter */
       const total = entries.filter(e => e.el).length;
       document.getElementById('tm-num').textContent = total;
       const BLOCKS = 20;
@@ -997,7 +996,6 @@
         if (ev.key === 'Escape') { pinned = null; tip.hidden = true; }
       });
 
-      /* the log */
       entries.sort((a, b) => a.label.localeCompare(b.label)).forEach(entry => {
         const chip = document.createElement(entry.el ? 'button' : 'span');
         chip.className = 'tm-chip' + (entry.el ? '' : ' missing');
@@ -1035,7 +1033,6 @@
       });
     })();
     </script>
-    <!-- =================== end places i've been =================== -->
 
   </div>
 
